@@ -1,0 +1,79 @@
+@startuml
+title Activity Diagram: BUC01 扫码签到
+' 设置样式
+skinparam backgroundColor white
+skinparam activity {
+  BackgroundColor<<System>> #E6F7FF
+  BorderColor<<System>> #1890FF
+  BackgroundColor #White
+  BorderColor #333333
+  ArrowColor #333333
+}
+
+' 定义泳道
+|#F0F0F0|Student| 学生
+|#E6F7FF|System| 智能候诊系统
+|#F0FFF0|MedicalStaff| 医护人员(医生/护士)
+
+' 开始流程
+|Student|
+start
+:扫描科室门口二维码;
+
+|System|
+:获取学生当前地理位置与身份信息;
+note right
+  防作弊校验：
+  确保学生确实在医院现场
+end note
+
+if (位置/身份合法?) then (否)
+    :返回"位置校验失败"提示;
+    stop
+else (是)
+    :查询今日挂号记录;
+endif
+
+if (存在有效挂号单?) then (否)
+    :提示"未查询到挂号信息";
+    :建议前往自助机挂号;
+    stop
+else (是)
+    :检查当前排队状态;
+endif
+
+if (已在候诊队列中?) then (是)
+    :提示"您已在队列中，请勿重复签到";
+    :跳转至进度查看页面;
+    stop
+else (否)
+    partition "入队核心逻辑" {
+        :更新挂号单状态为 "候诊中";
+        :创建排队节点对象;
+        :追加到 **科室候诊队列** 尾部;
+        note right
+          业务规则：
+          遵循 FIFO (先进先出) 原则
+        end note
+        :计算当前排队位置与预估时间;
+    }
+endif
+
+' 并行处理：一方面反馈学生，一方面通知医护
+fork
+    |Student|
+    :接收"签到成功"通知;
+    :查看当前排队号码及前方人数;
+fork again
+    |System|
+    :触发队列变更事件;
+    |MedicalStaff|
+    :医生/护士工作台视图自动刷新;
+    note right
+        实时看到新入队的学生
+        无需手动刷新
+    end note
+end fork
+
+stop
+@enduml

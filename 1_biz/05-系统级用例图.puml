@@ -1,0 +1,95 @@
+@startuml
+' --- 样式设置 ---
+left to right direction
+skinparam packageStyle rectangle
+skinparam usecase {
+    BackgroundColor White
+    BorderColor #333333
+    ArrowColor #333333
+}
+skinparam actor {
+    BackgroundColor White
+    BorderColor #333333
+}
+
+' --- 参与者定义 ---
+actor "学生" as Student
+actor "医生" as Doctor
+actor "护士" as Nurse
+
+' --- 系统边界 ---
+rectangle "智能候诊系统 (Smart Clinic System)" {
+
+    ' --- 基础公共服务 ---
+    usecase "身份认证" as UC_Auth #E6F7FF
+
+    ' --- 学生端用例 ---
+    usecase "UC01 扫码签到" as UC01
+    usecase "UC02 查看排队进度" as UC02
+    usecase "接收就诊通知" as UC_Notify
+
+    ' --- 医生端用例 ---
+    usecase "UC03 查看候诊列表" as UC03
+    usecase "UC04 呼叫病号" as UC04
+    usecase "UC05 标记过号" as UC05
+    usecase "查看电子病历" as UC_ViewEMR
+
+    ' --- 护士端用例 ---
+    usecase "UC06 处理过号重排" as UC06
+    usecase "UC07 管理医生状态" as UC07
+    usecase "UC08 维护科室信息" as UC08
+    usecase "人工调整队列" as UC_ManualAdjust
+
+    ' --- 内部逻辑关系 (Include/Extend) ---
+    ' 扫码签到必须包含身份验证和位置校验
+    UC01 .> UC_Auth : <<include>>
+    
+    ' 医生叫号时，系统自动包含分配逻辑和病历加载
+    UC04 ..> UC_ViewEMR : <<include>>
+    
+    ' 医生查看列表是叫号的前置动作
+    UC04 .> UC03 : <<include>>
+}
+
+' --- 参与者与用例关联 ---
+
+' 学生关联
+Student -- UC01
+Student -- UC02
+Student -- UC_Notify
+
+' 医生关联
+Doctor -- UC03
+Doctor -- UC04
+Doctor -- UC05
+
+' 护士关联
+Nurse -- UC06
+Nurse -- UC07
+Nurse -- UC08
+Nurse -- UC_ManualAdjust
+
+' --- 备注说明 ---
+note right of UC01
+  前置条件：
+  已挂号且位于科室门口
+end note
+
+note right of UC04
+  核心功能：
+  含"自动分配"算法
+  触发大屏语音
+end note
+
+note bottom of UC06
+  业务规则：
+  过号学生顺延 3 位插入
+end note
+
+note bottom of UC07
+  场景：
+  切换"暂停/开会"状态
+  停止分派新病人
+end note
+
+@enduml
