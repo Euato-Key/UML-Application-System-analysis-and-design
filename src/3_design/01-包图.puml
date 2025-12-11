@@ -1,0 +1,116 @@
+@startuml
+' --- 布局方向：自上而下 ---
+top to bottom direction
+
+' --- Rose 风格配色 ---
+skinparam package {
+    BackgroundColor #FEFECE
+    BorderColor #A80036
+    FontName Arial
+    FontColor #000000
+}
+skinparam componentStyle uml2
+
+' ==========================================
+' 1. 用户界面层 (Presentation Layer)
+' ==========================================
+package "用户界面层 (Presentation)" as UI_Layer {
+    package "Web管理门户" as WebPortal
+    note bottom of WebPortal: 对应运营经理\n的全景看板
+    
+    package "智能问答组件" as ChatInterface
+    note bottom of ChatInterface: 对应LLM\n对话窗口
+}
+
+' ==========================================
+' 2. 应用服务层 (Application Layer)
+' ==========================================
+package "应用服务层 (Application)" as App_Layer {
+    
+    package "智能体服务 (AgentService)" as Pkg_Agent {
+        [意图识别]
+        [Text2Cypher转换]
+    }
+    
+    package "设备全生命周期服务 (DeviceLifecycle)" as Pkg_Lifecycle {
+        [接入认证]
+        [固件升级]
+        [退役清洗]
+    }
+    
+    package "图谱拓扑服务 (TopologyService)" as Pkg_Topology {
+        [关系构建]
+        [影响范围分析]
+    }
+    
+    package "指令控制服务 (ControlService)" as Pkg_Control {
+        [指令翻译]
+        [批量下发]
+    }
+}
+
+' ==========================================
+' 3. 基础设施层 (Infrastructure Layer)
+' ==========================================
+package "基础设施层 (Infrastructure)" as Infra_Layer {
+    package "图数据库适配器 (GraphAdapter)" as Pkg_Neo4j {
+        [Neo4j Driver]
+    }
+    
+    package "大模型网关 (LLMGateway)" as Pkg_LLM {
+        [OpenAI/LocalLLM Client]
+    }
+    
+    package "IoT连接器 (IoTConnector)" as Pkg_MQTT {
+        [MQTT Broker Client]
+        [证书管理]
+    }
+}
+
+' ==========================================
+' 4. 领域模型层 (Domain Layer)
+' ==========================================
+package "领域模型层 (Domain / Shared)" as Domain_Layer {
+    package "核心实体模型 (CoreModel)" as Pkg_Model {
+        ' 【修复点】：将 class 关键字改为组件语法 [] 或 entity
+        ' 这样避免了混合图导致的语法错误
+        [Device (设备)]
+        [Space (空间:楼宇/房间)]
+        [TopologyRelation (拓扑关系)]
+    }
+    
+    package "通用DTO与异常" as Pkg_Common {
+    }
+}
+
+' ==========================================
+' 依赖关系定义 (遵循无环原则 & 单向依赖)
+' ==========================================
+
+' --- 1. UI 依赖 应用服务 ---
+WebPortal ..> Pkg_Lifecycle : use
+WebPortal ..> Pkg_Topology : use
+WebPortal ..> Pkg_Control : use
+ChatInterface ..> Pkg_Agent : use
+
+' --- 2. 应用服务 内部协作 (同层依赖) ---
+Pkg_Agent ..> Pkg_Topology : 查询图谱
+Pkg_Agent ..> Pkg_Control : 触发指令
+Pkg_Lifecycle ..> Pkg_Topology : 维护节点状态
+
+' --- 3. 应用服务 依赖 基础设施 (依赖倒置/使用关系) ---
+Pkg_Agent ..> Pkg_LLM : 调用大模型
+Pkg_Topology ..> Pkg_Neo4j : 执行Cypher
+Pkg_Lifecycle ..> Pkg_MQTT : 监听设备上下线
+Pkg_Control ..> Pkg_MQTT : 下发指令
+
+' --- 4. 基础设施 依赖 领域模型 (数据映射) ---
+Infra_Layer ..> Domain_Layer : 将数据映射为对象
+
+' --- 5. 应用服务 依赖 领域模型 (业务逻辑) ---
+App_Layer ..> Domain_Layer : 核心逻辑载体
+
+' --- 6. UI 依赖 领域模型 (展示数据) ---
+UI_Layer ..> Domain_Layer : 展示VO/DTO
+
+@enduml

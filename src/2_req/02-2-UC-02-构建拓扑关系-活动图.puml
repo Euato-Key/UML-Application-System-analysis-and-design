@@ -1,0 +1,64 @@
+@startuml
+title UC-02 构建拓扑关系流程图
+skinparam ActivityBackgroundColor #FEFECE
+skinparam ActivityBorderColor #B22222
+skinparam ArrowColor #B22222
+
+|#E6F2FF|用户 (运维工程师)|
+|#F2FFE6|IoT交互平台 (业务逻辑)|
+|#FFF2E6|知识图谱引擎 (Neo4j)|
+
+start
+
+|用户 (运维工程师)|
+:选中待配置的新接入设备;
+note left
+    前置条件：
+    设备已通过UC-01完成
+    双向证书认证并在线
+end note
+
+|IoT交互平台 (业务逻辑)|
+:加载当前空间树与可用网关;
+:解析MQTT元数据(辅助推荐);
+
+|用户 (运维工程师)|
+:指定物理空间 (楼宇/房间);
+:指定上行网关连接;
+
+|IoT交互平台 (业务逻辑)|
+:校验拓扑逻辑有效性;
+note right
+    **业务规则：**
+    1. 网关必须在同一楼宇内
+    2. 网关下挂设备数不能超限
+end note
+
+if (校验通过?) then (否)
+    |IoT交互平台 (业务逻辑)|
+    :返回错误提示;
+    stop
+else (是)
+    |IoT交互平台 (业务逻辑)|
+    :生成Cypher构建语句;
+    note right
+        例如:
+        MATCH (r:Room {id: 'R101'})
+        MATCH (d:Device {id: 'D001'})
+        MERGE (d)-[:LOCATED_IN]->(r)
+    end note
+    
+    |知识图谱引擎 (Neo4j)|
+    :执行事务;
+    :创建设备节点 (Node);
+    :建立关联关系 (Relationship);
+    
+    |IoT交互平台 (业务逻辑)|
+    :更新前端拓扑画布;
+endif
+
+|用户 (运维工程师)|
+:查看并确认拓扑生效;
+
+stop
+@enduml

@@ -1,0 +1,70 @@
+@startuml
+title UC-07 退役报废设备流程图
+skinparam ActivityBackgroundColor #FFE6E6
+skinparam ActivityBorderColor #8B0000
+skinparam ArrowColor #8B0000
+
+|#E6F2FF|用户 (运维工程师)|
+|#F2FFE6|IoT交互平台 (业务逻辑)|
+|#FFF2E6|知识图谱引擎 (Neo4j)|
+
+start
+
+|用户 (运维工程师)|
+:发起设备退役请求;
+
+|IoT交互平台 (业务逻辑)|
+:检查设备在线状态;
+
+if (设备在线?) then (是)
+    :下发“安全擦除”指令;
+    note right
+        **安全规则：**
+        必须覆盖写0操作，
+        清除人脸特征/视频缓存
+    end note
+    :等待设备ACK确认;
+else (否)
+    :提示无法连接;
+    |用户 (运维工程师)|
+    if (确认强制退役?) then (否)
+        stop
+    else (是)
+        |IoT交互平台 (业务逻辑)|
+        :标记为“高风险遗失”;
+        :记录安全审计日志;
+    endif
+endif
+
+|IoT交互平台 (业务逻辑)|
+:吊销设备访问证书 (Revoke Cert);
+
+|IoT交互平台 (业务逻辑)|
+:请求清理图谱数据;
+
+|知识图谱引擎 (Neo4j)|
+:执行清理事务;
+fork
+    :DELETE 关联关系 (Edges);
+    note right
+        断开 LOCATED_IN
+        断开 CONNECTED_TO
+        防止产生僵尸路径
+    end note
+fork again
+    :SET 状态 = 'RETIRED';
+    note right
+        节点保留用于
+        历史数据追溯
+    end note
+end fork
+
+|IoT交互平台 (业务逻辑)|
+:归档生命周期数据;
+:通知退役完成;
+
+|用户 (运维工程师)|
+:安排物理拆除;
+
+stop
+@enduml

@@ -1,0 +1,58 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "运营经理" as Manager
+actor "运维工程师" as Engineer
+actor "IoT设备" as Device <<System>>
+
+rectangle "物联网设备知识图谱交互管理平台" {
+
+    package "设备接入与配置" {
+        usecase "注册接入设备" as UC01
+        usecase "构建拓扑关系" as UC02
+    }
+
+    package "监控与诊断" {
+        usecase "监控设备状态" as UC03
+        usecase "处理安全告警" as UC08
+    }
+
+    package "人机交互与控制" {
+        usecase "智能查询图谱" as UC04
+        usecase "下发远程指令" as UC05
+    }
+
+    package "全生命周期管理" {
+        usecase "管理固件版本" as UC06
+        usecase "退役报废设备" as UC07
+        
+        ' 细分退役的包含关系，体现录音中提到的具体步骤
+        usecase "擦除敏感数据" as UC07_1
+        usecase "断开图谱关联" as UC07_2
+    }
+
+    ' 关系定义
+    Engineer --> UC01
+    Engineer --> UC02
+    Engineer --> UC03
+    Engineer --> UC05
+    Engineer --> UC06
+    Engineer --> UC07
+    Engineer --> UC08
+
+    Manager --> UC03
+    Manager --> UC04
+
+    ' 设备作为次要参与者参与接入和指令接收
+    UC01 -- Device
+    UC05 -- Device
+
+    ' 包含关系 (Include)
+    UC07 ..> UC07_1 : <<include>>
+    UC07 ..> UC07_2 : <<include>>
+
+    ' 扩展关系 (Extend) - 假设从查询中发现问题可能触发远程控制
+    UC05 .> UC04 : <<extend>> \n(发现异常时)
+}
+@enduml

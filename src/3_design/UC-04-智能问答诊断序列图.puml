@@ -1,0 +1,70 @@
+@startuml
+title UC-07 退役报废设备序列图
+autonumber
+skinparam sequence {
+    LifeLineBorderColor #A80036
+    LifeLineBackgroundColor #FEFECE
+    ParticipantBorderColor #A80036
+    ParticipantBackgroundColor #FEFECE
+    ActorBorderColor #A80036
+    ActorBackgroundColor #FEFECE
+    ArrowColor #A80036
+}
+
+actor "运维工程师" as User
+participant ":Web管理门户" as UI
+participant ":LifecycleService" as Service
+participant ":IoTConnector\n(MQTT)" as MQTT
+participant ":GraphAdapter\n(Neo4j)" as DB
+
+activate User
+
+User -> UI : 请求退役设备(deviceId)
+activate UI
+
+UI -> Service : decommission(deviceId)
+activate Service
+
+' --- 步骤1：检查在线状态 ---
+Service -> MQTT : checkStatus(deviceId)
+activate MQTT
+MQTT --> Service : isOnline
+deactivate MQTT
+
+alt 设备在线 (Happy Path)
+    ' --- 步骤2：物理擦除 ---
+    Service -> MQTT : sendCommand(WIPE_DATA)
+    activate MQTT
+    MQTT --> Service : ack
+    deactivate MQTT
+    
+    loop 轮询直到完成 (Max 3 times)
+        Service -> MQTT : getCommandResult()
+        activate MQTT
+        MQTT --> Service : status=COMPLETED
+        deactivate MQTT
+    end
+else 设备离线 (Force Path)
+    Service -> Service : logAudit("强制退役 - 无法物理擦除")
+end
+
+' --- 步骤3：逻辑清理 (无论在线离线都要做) ---
+Service -> Service : revokeCertificate()
+
+' --- 步骤4：图谱清理 ---
+Service -> DB : executeTransaction()
+activate DB
+note right of DB
+    1. MATCH (d)-[r]-() DELETE r
+    2. SET d.status = 'RETIRED'
+end note
+DB --> Service : txCommitted
+deactivate DB
+
+Service --> UI : return Success
+deactivate Service
+
+UI --> User : 提示"设备已安全退役"
+deactivate UI
+deactivate User
+@enduml

@@ -1,0 +1,66 @@
+@startuml
+title UC-04 智能查询图谱流程图
+skinparam ActivityBackgroundColor #E6E6FA
+skinparam ActivityBorderColor #4B0082
+skinparam ArrowColor #4B0082
+
+|#E6F2FF|用户 (运营经理)|
+|#F2FFE6|IoT交互平台 (LLM Agent)|
+|#FFF2E6|知识图谱引擎 (Neo4j)|
+
+start
+
+|用户 (运营经理)|
+:输入自然语言问题;
+note left
+    示例：
+    "A栋所有温度异常的传感器
+    是不是空调坏了？"
+end note
+
+|IoT交互平台 (LLM Agent)|
+:大模型解析意图与实体;
+note right
+    识别实体：A栋, 传感器, 空调
+    识别意图：关联分析, 状态查询
+end note
+
+if (意图清晰?) then (否)
+    :生成澄清反问;
+    |用户 (运营经理)|
+    :补充上下文信息;
+    stop
+else (是)
+    |IoT交互平台 (LLM Agent)|
+    :**Text2Cypher 转换**;
+    :生成图数据库查询语句;
+endif
+
+|知识图谱引擎 (Neo4j)|
+:执行 Cypher 查询;
+note right
+    MATCH (s:Sensor)-[:LOCATED_IN]->(r:Room)
+    WHERE s.temp > 30
+    MATCH (ac:AC)-[:COOLS]->(r)
+    RETURN s, r, ac
+end note
+
+if (查询成功?) then (否/语法错误)
+    |IoT交互平台 (LLM Agent)|
+    :捕获错误并尝试简化查询;
+    :返回友好提示;
+    stop
+else (是)
+    |知识图谱引擎 (Neo4j)|
+    :返回子图数据 (JSON);
+endif
+
+|IoT交互平台 (LLM Agent)|
+:基于数据生成自然语言总结;
+:渲染受影响的设备拓扑图;
+
+|用户 (运营经理)|
+:阅读报告并查看可视化图谱;
+
+stop
+@enduml

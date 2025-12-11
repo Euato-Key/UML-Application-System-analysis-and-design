@@ -1,0 +1,67 @@
+@startuml
+title UC-02 维护图谱拓扑序列图
+autonumber
+skinparam sequence {
+    LifeLineBorderColor #A80036
+    LifeLineBackgroundColor #FEFECE
+    ParticipantBorderColor #A80036
+    ParticipantBackgroundColor #FEFECE
+    ActorBorderColor #A80036
+    ActorBackgroundColor #FEFECE
+    ArrowColor #A80036
+    BoxBorderColor #A80036
+    BoxBackgroundColor #FFFFFF
+}
+
+actor "运维工程师" as User
+participant ":Web管理门户" as UI
+participant ":TopologyService" as Service
+participant ":Device" as DeviceEntity
+participant ":GraphAdapter\n(Neo4j)" as DB
+
+activate User
+
+User -> UI : 提交拓扑配置\n(deviceId, roomId, gatewayId)
+activate UI
+
+UI -> Service : bindTopology(cmd)
+activate Service
+
+' --- 步骤1：业务校验 ---
+Service -> Service : validateLogic()
+activate Service #DarkSalmon
+    note right: 校验网关容量、\n房间是否存在
+deactivate Service
+
+alt 校验失败
+    Service --> UI : throw ValidationException
+    UI --> User : 显示错误提示
+else 校验通过
+    ' --- 步骤2：实体状态更新 ---
+    Service -> DeviceEntity : updateLocation(roomId)
+    activate DeviceEntity
+    DeviceEntity --> Service : ok
+    deactivate DeviceEntity
+
+    ' --- 步骤3：构建Cypher并执行 ---
+    Service -> Service : buildMergeCypher()
+    
+    Service -> DB : execute(cypherStmt)
+    activate DB
+    note right of DB
+        MERGE (d)-[:LOCATED_IN]->(r)
+        MERGE (d)-[:CONNECTED_TO]->(g)
+    end note
+    
+    DB --> Service : result(nodesCreated, relsCreated)
+    deactivate DB
+
+    Service --> UI : return SuccessDTO
+end
+
+deactivate Service
+
+UI --> User : 显示"拓扑关系已建立"
+deactivate UI
+deactivate User
+@enduml

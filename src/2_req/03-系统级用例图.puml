@@ -1,0 +1,84 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+' --- Rose 风格配色设置 ---
+skinparam usecase {
+    BackgroundColor #FEFECE
+    BorderColor #A80036
+    ArrowColor #A80036
+    FontName Arial
+}
+skinparam actor {
+    BackgroundColor #FEFECE
+    BorderColor #A80036
+    FontName Arial
+}
+skinparam rectangle {
+    BackgroundColor #FFFFFF
+    BorderColor #000000
+}
+
+' --- 参与者定义 ---
+actor "运维工程师" as Engineer
+actor "运营经理" as Manager
+actor "IoT设备" as Device <<External System>>
+
+' --- 系统边界 ---
+rectangle "物联网设备知识图谱交互管理平台" {
+
+    ' --- 模块分组 (逻辑分组，非UML强制，但增加可读性) ---
+    
+    package "设备接入域" {
+        usecase "UC01_注册接入设备" as UC01
+        usecase "UC02_维护图谱拓扑" as UC02
+        
+        ' 业务规则：接入时必须建立拓扑关系
+        UC01 ..> UC02 : <<include>>
+    }
+
+    package "智能监控域" {
+        usecase "UC03_监控设备状态" as UC03
+        usecase "UC04_智能问答诊断" as UC04
+    }
+
+    package "控制与响应域" {
+        usecase "UC05_下发远程指令" as UC05
+        usecase "UC08_响应安全告警" as UC08
+        
+        ' 业务规则：处理告警时，可能需要下发阻断/重启指令
+        UC08 <. UC05 : <<extend>>
+    }
+
+    package "全生命周期域" {
+        usecase "UC06_发布固件版本" as UC06
+        usecase "UC07_退役报废设备" as UC07
+    }
+}
+
+' --- 关系定义 ---
+
+' 1. 运维工程师 (DevOps) - 负责生老病死
+Engineer --> UC01
+Engineer --> UC03
+Engineer --> UC05
+Engineer --> UC06
+Engineer --> UC07
+Engineer --> UC08
+
+' 2. 运营经理 (Manager) - 负责决策与查看
+Manager --> UC03
+Manager --> UC04
+
+' 3. IoT设备 (Device) - 外部交互
+' 设备参与注册握手
+Device -- UC01
+' 设备持续上报状态
+Device -- UC03
+' 设备接收控制指令
+Device -- UC05
+
+' --- 布局辅助 (可选，防止线条过于交叉) ---
+UC04 -[hidden]- UC05
+
+@enduml
