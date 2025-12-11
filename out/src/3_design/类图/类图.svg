@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="981px" preserveAspectRatio="none" style="width:1780px;height:981px;" version="1.1" viewBox="0 0 1780 981" width="1780px" zoomAndPan="magnify"><defs><filter height="300%" id="f5qt4b0gcabwn" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[d9f5f18e060f7c3b37f4b4f3f6a99ad1]
+cluster 领域模型层 (Domain Model)--><polygon fill="#FFFFFF" filter="url(#f5qt4b0gcabwn)" points="16,215,191,215,198,237.0986,682,237.0986,682,974,16,974,16,215" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="198" y1="237.0986" y2="237.0986"/><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="169" x="20" y="230.1318">领域模型层 (Domain Model)</text><!--MD5=[f06e69dc16c5f750fa703ace8adf1288]
+cluster 应用服务层 (Application Services)--><polygon fill="#FFFFFF" filter="url(#f5qt4b0gcabwn)" points="718,6,937,6,944,28.0986,1696,28.0986,1696,164,718,164,718,6" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="718" x2="944" y1="28.0986" y2="28.0986"/><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="213" x="722" y="21.1318">应用服务层 (Application Services)</text><!--MD5=[1ac11581162d9f9379c7b9ce2b318ee6]
+cluster 基础设施接口 (Infrastructure Interfaces)--><polygon fill="#FFFFFF" filter="url(#f5qt4b0gcabwn)" points="706,221.5,964,221.5,971,243.5986,1426,243.5986,1426,379.5,706,379.5,706,221.5" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="706" x2="971" y1="243.5986" y2="243.5986"/><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="252" x="710" y="236.6318">基础设施接口 (Infrastructure Interfaces)</text><!--MD5=[fc539fa3f3b7db9b31467e896d367b3b]
+class Device--><rect codeLine="26" fill="#FEFECE" filter="url(#f5qt4b0gcabwn)" height="157.8403" id="Device" style="stroke:#A80036;stroke-width:1.5;" width="164" x="381" y="449"/><ellipse cx="423" cy="465" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M422.4219,470.8594 Q420.3906,470.8594 419.2031,469.3594 Q418.0313,467.8594 418.0313,464.75 Q418.0313,462.1094 419.2813,460.3438 Q420.5313,458.5625 422.6875,458.5625 Q423.2031,458.5625 423.7344,458.7031 Q424.1719,458.8906 424.4219,458.8906 Q424.6094,458.8906 424.7031,458.8594 Q424.7969,458.8125 425.3438,458.0938 L426.1563,462.0625 L425.1094,462.375 Q424.6563,460.875 424.0625,460.2969 Q423.4844,459.7031 422.5625,459.7031 Q421.3906,459.7031 420.6875,461.1094 Q419.9844,462.5 419.9844,464.6719 Q419.9844,467.0625 420.5781,468.3281 Q421.1875,469.5781 422.5,469.5781 Q423.4219,469.5781 424.0938,468.9063 Q424.7656,468.2188 425.0938,466.6406 L426.1406,467.1406 Q425.7344,468.9063 424.75,469.8906 Q423.7656,470.8594 422.4219,470.8594 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="72" x="443" y="470.5576">设备 (Device)</text><line style="stroke:#A80036;stroke-width:1.5;" x1="382" x2="544" y1="481" y2="481"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="389" y="489"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="62" x="401" y="495.3179">设备ID : String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="389" y="501.6489"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="69" x="401" y="507.9668">设备名称 : String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="389" y="514.2979"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="138" x="401" y="520.6157">在线状态 : Enum {在线, 离线, 告警}</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="389" y="526.9468"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="69" x="401" y="533.2646">固件版本 : String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="389" y="539.5957"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="62" x="401" y="545.9136">证书ID : String</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="67" x="387" y="575.2114">[UC01 注册接入]</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="67" x="387" y="587.8604">[UC03 监控状态]</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="67" x="387" y="600.5093">[UC07 退役报废]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="382" x2="447" y1="558.5691" y2="558.5691"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="32" x="447" y="562.0625">需求追踪</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="479" x2="544" y1="558.5691" y2="558.5691"/><!--MD5=[e4951a412b0edb2e6f8e49ce06f9a46d]
+class Space--><rect codeLine="38" fill="#FEFECE" filter="url(#f5qt4b0gcabwn)" height="119.8936" id="Space" style="stroke:#A80036;stroke-width:1.5;" width="164" x="281" y="250"/><ellipse cx="323.9" cy="266" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M323.3219,271.8594 Q321.2906,271.8594 320.1031,270.3594 Q318.9313,268.8594 318.9313,265.75 Q318.9313,263.1094 320.1813,261.3438 Q321.4313,259.5625 323.5875,259.5625 Q324.1031,259.5625 324.6344,259.7031 Q325.0719,259.8906 325.3219,259.8906 Q325.5094,259.8906 325.6031,259.8594 Q325.6969,259.8125 326.2438,259.0938 L327.0563,263.0625 L326.0094,263.375 Q325.5563,261.875 324.9625,261.2969 Q324.3844,260.7031 323.4625,260.7031 Q322.2906,260.7031 321.5875,262.1094 Q320.8844,263.5 320.8844,265.6719 Q320.8844,268.0625 321.4781,269.3281 Q322.0875,270.5781 323.4,270.5781 Q324.3219,270.5781 324.9938,269.9063 Q325.6656,269.2188 325.9938,267.6406 L327.0406,268.1406 Q326.6344,269.9063 325.65,270.8906 Q324.6656,271.8594 323.3219,271.8594 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="70" x="344.1" y="271.5576">空间 (Space)</text><line style="stroke:#A80036;stroke-width:1.5;" x1="282" x2="444" y1="282" y2="282"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="289" y="290"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="62" x="301" y="296.3179">空间ID : String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="289" y="302.6489"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="69" x="301" y="308.9668">空间名称 : String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="289" y="315.2979"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="138" x="301" y="321.6157">空间类型 : Enum {楼宇, 楼层, 房间}</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="67" x="287" y="350.9136">[UC02 构建拓扑]</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="67" x="287" y="363.5625">[UC04 智能查询]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="282" x2="347" y1="334.2712" y2="334.2712"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="32" x="347" y="337.7646">需求追踪</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="379" x2="444" y1="334.2712" y2="334.2712"/><!--MD5=[931ec41c47d2faaeac20fbe4d4246be7]
+class Firmware--><rect codeLine="47" fill="#FEFECE" filter="url(#f5qt4b0gcabwn)" height="119.8936" id="Firmware" style="stroke:#A80036;stroke-width:1.5;" width="179" x="486.5" y="686"/><ellipse cx="501.5" cy="702" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M500.9219,707.8594 Q498.8906,707.8594 497.7031,706.3594 Q496.5313,704.8594 496.5313,701.75 Q496.5313,699.1094 497.7813,697.3438 Q499.0313,695.5625 501.1875,695.5625 Q501.7031,695.5625 502.2344,695.7031 Q502.6719,695.8906 502.9219,695.8906 Q503.1094,695.8906 503.2031,695.8594 Q503.2969,695.8125 503.8438,695.0938 L504.6563,699.0625 L503.6094,699.375 Q503.1563,697.875 502.5625,697.2969 Q501.9844,696.7031 501.0625,696.7031 Q499.8906,696.7031 499.1875,698.1094 Q498.4844,699.5 498.4844,701.6719 Q498.4844,704.0625 499.0781,705.3281 Q499.6875,706.5781 501,706.5781 Q501.9219,706.5781 502.5938,705.9063 Q503.2656,705.2188 503.5938,703.6406 L504.6406,704.1406 Q504.2344,705.9063 503.25,706.8906 Q502.2656,707.8594 500.9219,707.8594 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="147" x="515.5" y="707.5576">固件包 (FirmwarePackage)</text><line style="stroke:#A80036;stroke-width:1.5;" x1="487.5" x2="664.5" y1="718" y2="718"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="494.5" y="726"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="61" x="506.5" y="732.3179">版本号 : String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="494.5" y="738.6489"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="61" x="506.5" y="744.9668">下载地址 : URL</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="494.5" y="751.2979"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="82" x="506.5" y="757.6157">MD5校验码 : String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="494.5" y="763.9468"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="85" x="506.5" y="770.2646">发布时间 : DateTime</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="67" x="492.5" y="799.5625">[UC06 固件管理]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="487.5" x2="560" y1="782.9202" y2="782.9202"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="32" x="560" y="786.4136">需求追踪</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="592" x2="664.5" y1="782.9202" y2="782.9202"/><!--MD5=[0df93ba7b86d6e3ff3f57d8b1170b96e]
+class Alert--><rect codeLine="56" fill="#FEFECE" filter="url(#f5qt4b0gcabwn)" height="119.8936" id="Alert" style="stroke:#A80036;stroke-width:1.5;" width="158" x="32" y="686"/><ellipse cx="47" cy="702" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M46.4219,707.8594 Q44.3906,707.8594 43.2031,706.3594 Q42.0313,704.8594 42.0313,701.75 Q42.0313,699.1094 43.2813,697.3438 Q44.5313,695.5625 46.6875,695.5625 Q47.2031,695.5625 47.7344,695.7031 Q48.1719,695.8906 48.4219,695.8906 Q48.6094,695.8906 48.7031,695.8594 Q48.7969,695.8125 49.3438,695.0938 L50.1563,699.0625 L49.1094,699.375 Q48.6563,697.875 48.0625,697.2969 Q47.4844,696.7031 46.5625,696.7031 Q45.3906,696.7031 44.6875,698.1094 Q43.9844,699.5 43.9844,701.6719 Q43.9844,704.0625 44.5781,705.3281 Q45.1875,706.5781 46.5,706.5781 Q47.4219,706.5781 48.0938,705.9063 Q48.7656,705.2188 49.0938,703.6406 L50.1406,704.1406 Q49.7344,705.9063 48.75,706.8906 Q47.7656,707.8594 46.4219,707.8594 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="126" x="61" y="707.5576">安全告警 (SecurityAlert)</text><line style="stroke:#A80036;stroke-width:1.5;" x1="33" x2="189" y1="718" y2="718"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="40" y="726"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="62" x="52" y="732.3179">告警ID : String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="40" y="738.6489"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="114" x="52" y="744.9668">告警级别 : Enum {低, 中, 高}</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="40" y="751.2979"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="85" x="52" y="757.6157">发生时间 : DateTime</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="40" y="763.9468"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="69" x="52" y="770.2646">原始报文 : String</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="67" x="38" y="799.5625">[UC08 安全告警]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="33" x2="95" y1="782.9202" y2="782.9202"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="32" x="95" y="786.4136">需求追踪</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="127" x2="189" y1="782.9202" y2="782.9202"/><!--MD5=[6de492f04047ff8a778df2bea690e363]
+class Gateway--><rect codeLine="66" fill="#FEFECE" filter="url(#f5qt4b0gcabwn)" height="73.2979" id="Gateway" style="stroke:#A80036;stroke-width:1.5;" width="114" x="250" y="709.5"/><ellipse cx="265" cy="725.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M264.4219,731.3594 Q262.3906,731.3594 261.2031,729.8594 Q260.0313,728.3594 260.0313,725.25 Q260.0313,722.6094 261.2813,720.8438 Q262.5313,719.0625 264.6875,719.0625 Q265.2031,719.0625 265.7344,719.2031 Q266.1719,719.3906 266.4219,719.3906 Q266.6094,719.3906 266.7031,719.3594 Q266.7969,719.3125 267.3438,718.5938 L268.1563,722.5625 L267.1094,722.875 Q266.6563,721.375 266.0625,720.7969 Q265.4844,720.2031 264.5625,720.2031 Q263.3906,720.2031 262.6875,721.6094 Q261.9844,723 261.9844,725.1719 Q261.9844,727.5625 262.5781,728.8281 Q263.1875,730.0781 264.5,730.0781 Q265.4219,730.0781 266.0938,729.4063 Q266.7656,728.7188 267.0938,727.1406 L268.1406,727.6406 Q267.7344,729.4063 266.75,730.3906 Q265.7656,731.3594 264.4219,731.3594 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="82" x="279" y="731.0576">网关 (Gateway)</text><line style="stroke:#A80036;stroke-width:1.5;" x1="251" x2="363" y1="741.5" y2="741.5"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="258" y="749.5"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="82" x="270" y="755.8179">最大挂载数 : Integer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="258" y="762.1489"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="69" x="270" y="768.4668">协议类型 : String</text><line style="stroke:#A80036;stroke-width:1.5;" x1="251" x2="363" y1="774.7979" y2="774.7979"/><!--MD5=[97d46ae094d28e0d28828e4b8046fed1]
+class Sensor--><rect codeLine="71" fill="#FEFECE" filter="url(#f5qt4b0gcabwn)" height="73.2979" id="Sensor" style="stroke:#A80036;stroke-width:1.5;" width="119" x="328.5" y="885"/><ellipse cx="343.5" cy="901" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M342.9219,906.8594 Q340.8906,906.8594 339.7031,905.3594 Q338.5313,903.8594 338.5313,900.75 Q338.5313,898.1094 339.7813,896.3438 Q341.0313,894.5625 343.1875,894.5625 Q343.7031,894.5625 344.2344,894.7031 Q344.6719,894.8906 344.9219,894.8906 Q345.1094,894.8906 345.2031,894.8594 Q345.2969,894.8125 345.8438,894.0938 L346.6563,898.0625 L345.6094,898.375 Q345.1563,896.875 344.5625,896.2969 Q343.9844,895.7031 343.0625,895.7031 Q341.8906,895.7031 341.1875,897.1094 Q340.4844,898.5 340.4844,900.6719 Q340.4844,903.0625 341.0781,904.3281 Q341.6875,905.5781 343,905.5781 Q343.9219,905.5781 344.5938,904.9063 Q345.2656,904.2188 345.5938,902.6406 L346.6406,903.1406 Q346.2344,904.9063 345.25,905.8906 Q344.2656,906.8594 342.9219,906.8594 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="87" x="357.5" y="906.5576">传感器 (Sensor)</text><line style="stroke:#A80036;stroke-width:1.5;" x1="329.5" x2="446.5" y1="917" y2="917"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="336.5" y="925"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="64" x="348.5" y="931.3179">采集精度 : Float</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="336.5" y="937.6489"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="69" x="348.5" y="943.9668">数据单位 : String</text><line style="stroke:#A80036;stroke-width:1.5;" x1="329.5" x2="446.5" y1="950.2979" y2="950.2979"/><!--MD5=[0ef77a9cb880f6f8ffdd67dbd8e09c8a]
+class TopologySvc--><rect codeLine="101" fill="#FEFECE" filter="url(#f5qt4b0gcabwn)" height="107.2446" id="TopologySvc" style="stroke:#A80036;stroke-width:1.5;" width="193" x="734.5" y="41"/><ellipse cx="754.9" cy="57" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M754.3219,62.8594 Q752.2906,62.8594 751.1031,61.3594 Q749.9313,59.8594 749.9313,56.75 Q749.9313,54.1094 751.1813,52.3438 Q752.4313,50.5625 754.5875,50.5625 Q755.1031,50.5625 755.6344,50.7031 Q756.0719,50.8906 756.3219,50.8906 Q756.5094,50.8906 756.6031,50.8594 Q756.6969,50.8125 757.2438,50.0938 L758.0563,54.0625 L757.0094,54.375 Q756.5563,52.875 755.9625,52.2969 Q755.3844,51.7031 754.4625,51.7031 Q753.2906,51.7031 752.5875,53.1094 Q751.8844,54.5 751.8844,56.6719 Q751.8844,59.0625 752.4781,60.3281 Q753.0875,61.5781 754.4,61.5781 Q755.3219,61.5781 755.9938,60.9063 Q756.6656,60.2188 756.9938,58.6406 L758.0406,59.1406 Q757.6344,60.9063 756.65,61.8906 Q755.6656,62.8594 754.3219,62.8594 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="149" x="770.1" y="62.5576">拓扑服务 (TopologyService)</text><line style="stroke:#A80036;stroke-width:1.5;" x1="735.5" x2="926.5" y1="73" y2="73"/><ellipse cx="745.5" cy="84" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="140" x="754.5" y="87.3179">绑定空间关系(deviceId, spaceId)</text><ellipse cx="745.5" cy="96.6489" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="155" x="754.5" y="99.9668">构建网络关联(sensorId, gatewayId)</text><ellipse cx="745.5" cy="109.2979" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="167" x="754.5" y="112.6157">获取影响范围(deviceId) : List&lt;Device&gt;</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="71" x="740.5" y="141.9136">[UC-02 构建拓扑]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="735.5" x2="815" y1="125.2712" y2="125.2712"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="32" x="815" y="128.7646">需求追踪</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="847" x2="926.5" y1="125.2712" y2="125.2712"/><!--MD5=[fda919b78adced33ec71abf2b0dc3000]
+class AgentSvc--><rect codeLine="109" fill="#FEFECE" filter="url(#f5qt4b0gcabwn)" height="94.5957" id="AgentSvc" style="stroke:#A80036;stroke-width:1.5;" width="174" x="988" y="47"/><ellipse cx="1003" cy="63" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1002.4219,68.8594 Q1000.3906,68.8594 999.2031,67.3594 Q998.0313,65.8594 998.0313,62.75 Q998.0313,60.1094 999.2813,58.3438 Q1000.5313,56.5625 1002.6875,56.5625 Q1003.2031,56.5625 1003.7344,56.7031 Q1004.1719,56.8906 1004.4219,56.8906 Q1004.6094,56.8906 1004.7031,56.8594 Q1004.7969,56.8125 1005.3438,56.0938 L1006.1563,60.0625 L1005.1094,60.375 Q1004.6563,58.875 1004.0625,58.2969 Q1003.4844,57.7031 1002.5625,57.7031 Q1001.3906,57.7031 1000.6875,59.1094 Q999.9844,60.5 999.9844,62.6719 Q999.9844,65.0625 1000.5781,66.3281 Q1001.1875,67.5781 1002.5,67.5781 Q1003.4219,67.5781 1004.0938,66.9063 Q1004.7656,66.2188 1005.0938,64.6406 L1006.1406,65.1406 Q1005.7344,66.9063 1004.75,67.8906 Q1003.7656,68.8594 1002.4219,68.8594 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="142" x="1017" y="68.5576">智能体服务 (AgentService)</text><line style="stroke:#A80036;stroke-width:1.5;" x1="989" x2="1161" y1="79" y2="79"/><ellipse cx="999" cy="90" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="141" x="1008" y="93.3179">解析自然语言(question) : Cypher</text><ellipse cx="999" cy="102.6489" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="143" x="1008" y="105.9668">生成分析报告(graphData) : String</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="71" x="994" y="135.2646">[UC-04 智能查询]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="989" x2="1059" y1="118.6223" y2="118.6223"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="32" x="1059" y="122.1157">需求追踪</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="1091" x2="1161" y1="118.6223" y2="118.6223"/><!--MD5=[e592fef7242b66f5fa2f65362554df28]
+class LifeSvc--><rect codeLine="116" fill="#FEFECE" filter="url(#f5qt4b0gcabwn)" height="107.2446" id="LifeSvc" style="stroke:#A80036;stroke-width:1.5;" width="202" x="1478" y="41"/><ellipse cx="1493" cy="57" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1492.4219,62.8594 Q1490.3906,62.8594 1489.2031,61.3594 Q1488.0313,59.8594 1488.0313,56.75 Q1488.0313,54.1094 1489.2813,52.3438 Q1490.5313,50.5625 1492.6875,50.5625 Q1493.2031,50.5625 1493.7344,50.7031 Q1494.1719,50.8906 1494.4219,50.8906 Q1494.6094,50.8906 1494.7031,50.8594 Q1494.7969,50.8125 1495.3438,50.0938 L1496.1563,54.0625 L1495.1094,54.375 Q1494.6563,52.875 1494.0625,52.2969 Q1493.4844,51.7031 1492.5625,51.7031 Q1491.3906,51.7031 1490.6875,53.1094 Q1489.9844,54.5 1489.9844,56.6719 Q1489.9844,59.0625 1490.5781,60.3281 Q1491.1875,61.5781 1492.5,61.5781 Q1493.4219,61.5781 1494.0938,60.9063 Q1494.7656,60.2188 1495.0938,58.6406 L1496.1406,59.1406 Q1495.7344,60.9063 1494.75,61.8906 Q1493.7656,62.8594 1492.4219,62.8594 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="170" x="1507" y="62.5576">生命周期服务 (LifecycleService)</text><line style="stroke:#A80036;stroke-width:1.5;" x1="1479" x2="1679" y1="73" y2="73"/><ellipse cx="1489" cy="84" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="85" x="1498" y="87.3179">注册设备(metaData)</text><ellipse cx="1489" cy="96.6489" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="144" x="1498" y="99.9668">灰度升级固件(version, deviceIds)</text><ellipse cx="1489" cy="109.2979" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="80" x="1498" y="112.6157">退役设备(deviceId)</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="108" x="1484" y="141.9136">[UC-01, UC-06, UC-07]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="1479" x2="1563" y1="125.2712" y2="125.2712"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="32" x="1563" y="128.7646">需求追踪</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="1595" x2="1679" y1="125.2712" y2="125.2712"/><!--MD5=[8485fea6a9b4005eef27012fa566be4d]
+class ControlSvc--><rect codeLine="124" fill="#FEFECE" filter="url(#f5qt4b0gcabwn)" height="94.5957" id="ControlSvc" style="stroke:#A80036;stroke-width:1.5;" width="195" x="1222.5" y="47"/><ellipse cx="1237.5" cy="63" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1236.9219,68.8594 Q1234.8906,68.8594 1233.7031,67.3594 Q1232.5313,65.8594 1232.5313,62.75 Q1232.5313,60.1094 1233.7813,58.3438 Q1235.0313,56.5625 1237.1875,56.5625 Q1237.7031,56.5625 1238.2344,56.7031 Q1238.6719,56.8906 1238.9219,56.8906 Q1239.1094,56.8906 1239.2031,56.8594 Q1239.2969,56.8125 1239.8438,56.0938 L1240.6563,60.0625 L1239.6094,60.375 Q1239.1563,58.875 1238.5625,58.2969 Q1237.9844,57.7031 1237.0625,57.7031 Q1235.8906,57.7031 1235.1875,59.1094 Q1234.4844,60.5 1234.4844,62.6719 Q1234.4844,65.0625 1235.0781,66.3281 Q1235.6875,67.5781 1237,67.5781 Q1237.9219,67.5781 1238.5938,66.9063 Q1239.2656,66.2188 1239.5938,64.6406 L1240.6406,65.1406 Q1240.2344,66.9063 1239.25,67.8906 Q1238.2656,68.8594 1236.9219,68.8594 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="163" x="1251.5" y="68.5576">指令控制服务 (ControlService)</text><line style="stroke:#A80036;stroke-width:1.5;" x1="1223.5" x2="1416.5" y1="79" y2="79"/><ellipse cx="1233.5" cy="90" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="132" x="1242.5" y="93.3179">下发指令(deviceId, command)</text><ellipse cx="1233.5" cy="102.6489" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="86" x="1242.5" y="105.9668">批量重启(deviceIds)</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="71" x="1228.5" y="135.2646">[UC-05 远程指令]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="1223.5" x2="1304" y1="118.6223" y2="118.6223"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="32" x="1304" y="122.1157">需求追踪</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="1336" x2="1416.5" y1="118.6223" y2="118.6223"/><!--MD5=[57dcfdd68c6683d582dcb8ec75f195dd]
+class GraphRepo--><rect codeLine="137" fill="#FEFECE" filter="url(#f5qt4b0gcabwn)" height="107.2446" id="GraphRepo" style="stroke:#A80036;stroke-width:1.5;" width="208" x="722" y="256.5"/><ellipse cx="737" cy="272.5" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M733.5938,267.2813 L733.5938,266.1875 L739.5938,266.1875 L739.5938,267.2813 L737.7188,267.2813 Q737.5781,267.2813 737.5156,267.3281 Q737.4688,267.3594 737.4688,267.4688 L737.4688,276.9531 Q737.4688,277.0625 737.5156,277.1094 Q737.5781,277.1406 737.7188,277.1406 L739.5938,277.1406 L739.5938,278.2344 L733.5938,278.2344 L733.5938,277.1406 L735.4688,277.1406 Q735.6563,277.1406 735.6875,277.1094 Q735.7188,277.0781 735.7188,276.9531 L735.7188,267.4688 Q735.7188,267.3438 735.6875,267.3125 Q735.6563,267.2813 735.4688,267.2813 L733.5938,267.2813 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="176" x="751" y="278.0576">图数据库仓库 (GraphRepository)</text><line style="stroke:#A80036;stroke-width:1.5;" x1="723" x2="929" y1="288.5" y2="288.5"/><ellipse cx="733" cy="299.5" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="110" x="742" y="302.8179">executeCypher(query)</text><ellipse cx="733" cy="312.1489" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="119" x="742" y="315.4668">mergeNode(label, props)</text><ellipse cx="733" cy="324.7979" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="132" x="742" y="328.1157">deleteRelationship(from, to)</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="108" x="728" y="357.4136">[UC-02, UC-04, UC-07]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="723" x2="810" y1="340.7712" y2="340.7712"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="32" x="810" y="344.2646">需求追踪</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="842" x2="929" y1="340.7712" y2="340.7712"/><!--MD5=[c1e95541cc94e691c249f2dce6168342]
+class LLMClient--><rect codeLine="145" fill="#FEFECE" filter="url(#f5qt4b0gcabwn)" height="81.9468" id="LLMClient" style="stroke:#A80036;stroke-width:1.5;" width="170" x="990" y="269"/><ellipse cx="1005" cy="285" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1001.5938,279.7813 L1001.5938,278.6875 L1007.5938,278.6875 L1007.5938,279.7813 L1005.7188,279.7813 Q1005.5781,279.7813 1005.5156,279.8281 Q1005.4688,279.8594 1005.4688,279.9688 L1005.4688,289.4531 Q1005.4688,289.5625 1005.5156,289.6094 Q1005.5781,289.6406 1005.7188,289.6406 L1007.5938,289.6406 L1007.5938,290.7344 L1001.5938,290.7344 L1001.5938,289.6406 L1003.4688,289.6406 Q1003.6563,289.6406 1003.6875,289.6094 Q1003.7188,289.5781 1003.7188,289.4531 L1003.7188,279.9688 Q1003.7188,279.8438 1003.6875,279.8125 Q1003.6563,279.7813 1003.4688,279.7813 L1001.5938,279.7813 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="138" x="1019" y="290.5576">大模型客户端 (LLMClient)</text><line style="stroke:#A80036;stroke-width:1.5;" x1="991" x2="1159" y1="301" y2="301"/><ellipse cx="1001" cy="312" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="114" x="1010" y="315.3179">chatCompletion(prompt)</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="71" x="996" y="344.6157">[UC-04 智能查询]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="991" x2="1059" y1="327.9734" y2="327.9734"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="32" x="1059" y="331.4668">需求追踪</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="1091" x2="1159" y1="327.9734" y2="327.9734"/><!--MD5=[7ab832bd0c47fb53935639df420a2167]
+class IoTConn--><rect codeLine="151" fill="#FEFECE" filter="url(#f5qt4b0gcabwn)" height="94.5957" id="IoTConn" style="stroke:#A80036;stroke-width:1.5;" width="189" x="1220.5" y="262.5"/><ellipse cx="1243.15" cy="278.5" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1239.7438,273.2813 L1239.7438,272.1875 L1245.7438,272.1875 L1245.7438,273.2813 L1243.8688,273.2813 Q1243.7281,273.2813 1243.6656,273.3281 Q1243.6188,273.3594 1243.6188,273.4688 L1243.6188,282.9531 Q1243.6188,283.0625 1243.6656,283.1094 Q1243.7281,283.1406 1243.8688,283.1406 L1245.7438,283.1406 L1245.7438,284.2344 L1239.7438,284.2344 L1239.7438,283.1406 L1241.6188,283.1406 Q1241.8063,283.1406 1241.8375,283.1094 Q1241.8688,283.0781 1241.8688,282.9531 L1241.8688,273.4688 Q1241.8688,273.3438 1241.8375,273.3125 Q1241.8063,273.2813 1241.6188,273.2813 L1239.7438,273.2813 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="140" x="1258.85" y="284.0576">IoT连接器 (IoTConnector)</text><line style="stroke:#A80036;stroke-width:1.5;" x1="1221.5" x2="1408.5" y1="294.5" y2="294.5"/><ellipse cx="1231.5" cy="305.5" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="163" x="1240.5" y="308.8179">sendMqttMessage(topic, payload)</text><ellipse cx="1231.5" cy="318.1489" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="117" x="1240.5" y="321.4668">revokeCertificate(certId)</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="108" x="1226.5" y="350.7646">[UC-01, UC-05, UC-07]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="1221.5" x2="1299" y1="334.1223" y2="334.1223"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacing" textLength="32" x="1299" y="337.6157">需求追踪</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,2.0;" x1="1331" x2="1408.5" y1="334.1223" y2="334.1223"/><!--MD5=[e14f37b940f76c169ef661e8e049deeb]
+reverse link Device to Gateway--><path codeLine="76" d="M394.45,623.91 C372.58,654.2 349.7,685.88 332.83,709.24 " fill="none" id="Device-backto-Gateway" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="389.08,619.4,406.46,607.29,400.42,627.6,389.08,619.4" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[11e26fa4fbd03a70b9cb9c8ed391c96b]
+reverse link Device to Sensor--><path codeLine="77" d="M458.32,627.27 C453.19,692.89 442.46,780.49 420,855 C416.97,865.06 412.54,875.48 407.94,884.97 " fill="none" id="Device-backto-Sensor" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="451.35,626.66,459.77,607.22,465.31,627.67,451.35,626.66" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[f793fb4f6811e08b2b2831682ce59a81]
+reverse link Space to Space--><path codeLine="81" d="M458.1,291.72 C484.65,292.55 505,298.64 505,310 C505,323.16 477.69,329.25 445.07,328.27 " fill="none" id="Space-backto-Space" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="445.07,291.73,451.07,295.73,457.07,291.73,451.07,287.73,445.07,291.73" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#000000" points="510.1562,315.3748,512.8111,306.2423,506.9361,306.4259,510.1562,315.3748" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="524" y="316.3979">包含</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="32" x="452.885" y="287.529">1 (父)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="45" x="453.0761" y="326.9489">0..* (子)</text><!--MD5=[ea68cd1e2cb516c6a72f1b53d506bc11]
+reverse link Space to Device--><path codeLine="84" d="M395.88,382.02 C405.81,403.47 416.76,427.13 426.89,449 " fill="none" id="Space-backto-Device" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="390.33,370.02,389.218,377.1448,395.3671,380.9117,396.4791,373.7868,390.33,370.02" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#000000" points="420.1007,414.4145,418.9675,404.9717,413.6336,407.4412,420.1007,414.4145" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="427" y="415.8979">位于</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="386.0853" y="392.8903">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="402.1349" y="437.9216">0..*</text><!--MD5=[4f7c09793478f70b2c4c0d4c34d781ce]
+link Gateway to Sensor--><path codeLine="87" d="M315.64,782.58 C321.58,804.16 330.47,831.9 342,855 C347.09,865.2 353.64,875.58 360.19,884.99 " fill="none" id="Gateway-Sensor" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#000000" points="348.9945,850.4622,348.0814,840.9955,342.6914,843.3402,348.9945,850.4622" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="356" y="851.8979">管理连接</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="309.5877" y="805.8317">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="332.7462" y="874.0715">0..*</text><!--MD5=[10cd0d7179f20111cbd4fad444449a90]
+link Device to Firmware--><path codeLine="90" d="M503.96,607.29 C516.69,631.62 530.56,658.14 542.7,681.35 " fill="none" id="Device-to-Firmware" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="545.11,685.95,544.4619,676.1225,542.783,681.5245,537.381,679.8456,545.11,685.95" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#000000" points="533.3175,651.3077,531.7292,641.9307,526.5209,644.6551,533.3175,651.3077" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="540" y="652.8979">安装</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="486.6206" y="629.7717">0..*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22" x="517.7428" y="675.1201">0..1</text><!--MD5=[f1cfe45037502ec9e3bb363f51423e80]
+link Device to Alert--><path codeLine="93" d="M380.92,579.37 C323.42,614.65 247.02,661.53 190.18,696.41 " fill="none" id="Device-Alert" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#000000" points="287.7383,649.4922,296.9848,647.2666,293.9107,642.2567,287.7383,649.4922" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="301" y="652.8979">触发</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="366.0306" y="581.2622">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="198.1226" y="689.1726">0..*</text><!--MD5=[7f6985805a676118663ba80e63399c81]
+link TopologySvc to Space--><path codeLine="164" d="M734.18,118.66 C681.36,133.03 615.6,153.76 560,180 C521.08,198.37 480.86,223.45 446.98,246.61 " fill="none" id="TopologySvc-to-Space" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="442.46,249.71,452.1454,247.9231,446.5848,246.884,447.6238,241.3234,442.46,249.71" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="561" y="195.8979">维护</text><!--MD5=[d9f0803dc4d4a1563497a3beb43325d7]
+link TopologySvc to Device--><path codeLine="165" d="M742.74,148.02 C717.98,165.05 692.08,185.23 671,207 C633.7,245.52 560.42,363.25 511.57,444.63 " fill="none" id="TopologySvc-to-Device" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="508.97,448.96,517.0304,443.3005,511.5425,444.6725,510.1705,439.1846,508.97,448.96" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="672" y="316.3979">维护</text><!--MD5=[97839d071b076ce647d68c650295c5fc]
+link LifeSvc to Device--><path codeLine="166" d="M1581.36,148.19 C1581.38,212.02 1571.96,319.44 1515,387.5 C1491.53,415.54 1474.41,409.9 1439,419 C1118.34,501.41 722.49,520.94 550.09,525.57 " fill="none" id="LifeSvc-to-Device" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="545.05,525.7,554.1498,529.4673,550.0483,525.5715,553.9442,521.47,545.05,525.7" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="1579" y="316.3979">管理</text><!--MD5=[f6e59e0062db639aac9f69206015a478]
+link LifeSvc to Firmware--><path codeLine="167" d="M1613.64,148.32 C1618.75,158.46 1623.22,169.28 1626,180 C1642.09,242.02 1773.78,179.65 1621,387.5 C1393.65,696.81 882.8,740.98 670.9,745.54 " fill="none" id="LifeSvc-to-Firmware" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="665.64,745.64,674.7182,749.4592,670.639,745.54,674.5582,741.4608,665.64,745.64" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="1608" y="415.8979">发布</text><!--MD5=[ba2b8da740605e3a4be530a9da1cf476]
+link AgentSvc to Device--><path codeLine="168" d="M1136,142.12 C1153.58,153.54 1173.35,164.6 1193,172 C1199.31,174.37 1428.59,201.9 1433,207 C1485.47,267.68 1485.53,326.87 1433,387.5 C1375.41,453.96 778.18,504.06 550.5,520.88 " fill="none" id="AgentSvc-to-Device" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="545.2,521.27,554.4723,524.5903,550.1862,520.8985,553.878,516.6124,545.2,521.27" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="1473" y="316.3979">查询</text><!--MD5=[f0bd08d978de164c8de9798b54684db4]
+link TopologySvc to GraphRepo--><path codeLine="171" d="M824.52,148.17 C823.47,158.7 822.55,169.69 822,180 C820.77,203.2 821.19,228.77 822.13,250.98 " fill="none" id="TopologySvc-to-GraphRepo" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="822.36,256.26,825.9448,247.0867,822.1317,251.2652,817.9532,247.4521,822.36,256.26" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="823" y="195.8979">存取图谱</text><!--MD5=[752596f62d0ac26cf85c1a0e84797617]
+link AgentSvc to GraphRepo--><path codeLine="172" d="M1020.66,142.09 C982.68,174.66 931.76,218.32 891.53,252.82 " fill="none" id="AgentSvc-to-GraphRepo" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="887.67,256.13,897.1065,253.3099,891.4663,252.876,891.9001,247.2359,887.67,256.13" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="973" y="195.8979">查询图谱</text><!--MD5=[fc79e072dbe1dfa5ea205612b5be1b8f]
+link AgentSvc to LLMClient--><path codeLine="173" d="M1075,142.09 C1075,178.23 1075,228.02 1075,263.8 " fill="none" id="AgentSvc-to-LLMClient" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="1075,268.97,1079,259.97,1075,263.97,1071,259.97,1075,268.97" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="1076" y="195.8979">语义分析</text><!--MD5=[ed3c945c6e67dd2b493ce2a849d3d428]
+link LifeSvc to IoTConn--><path codeLine="174" d="M1514.08,148 C1472.22,181.85 1418.11,225.61 1376.87,258.96 " fill="none" id="LifeSvc-to-IoTConn" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="1372.92,262.16,1382.4331,259.6102,1376.8076,259.0157,1377.4021,253.3901,1372.92,262.16" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="1471" y="195.8979">设备交互</text><!--MD5=[d5c04ee77466e5df1ed849f872062f25]
+link ControlSvc to IoTConn--><path codeLine="175" d="M1318.91,142.09 C1318.11,176 1317.04,221.95 1316.22,257.04 " fill="none" id="ControlSvc-to-IoTConn" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="1316.1,262.14,1320.3052,253.234,1316.2146,257.1413,1312.3073,253.0507,1316.1,262.14" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="1318" y="195.8979">指令下发</text><!--MD5=[143175f77d52d934ab6c8930a524fe6d]
+@startuml
+' - - - 布局设置 - - -
+top to bottom direction
+' 增加节点间距，防止线条过于密集
+skinparam nodesep 60
+skinparam ranksep 60
+
+' - - - Rose 风格配色 - - -
+skinparam class {
+    BackgroundColor #FEFECE
+    ArrowColor #A80036
+    BorderColor #A80036
+    AttributeFontName Arial
+    AttributeFontSize 11
+}
+skinparam package {
+    BackgroundColor #FFFFFF
+    BorderColor #000000
+    FontName Arial
+}
+
+' ==========================================
+' 1. Domain Layer (领域模型层 - 核心实体)
+' ==========================================
+package "领域模型层 (Domain Model)" {
+
+    class "设备 (Device)" as Device {
+        - 设备ID : String
+        - 设备名称 : String
+        - 在线状态 : Enum {在线, 离线, 告警}
+        - 固件版本 : String
+        - 证书ID : String
+        .. 需求追踪 ..
+        [UC01 注册接入]
+        [UC03 监控状态]
+        [UC07 退役报废]
+    }
+
+    class "空间 (Space)" as Space {
+        - 空间ID : String
+        - 空间名称 : String
+        - 空间类型 : Enum {楼宇, 楼层, 房间}
+        .. 需求追踪 ..
+        [UC02 构建拓扑]
+        [UC04 智能查询]
+    }
+
+    class "固件包 (FirmwarePackage)" as Firmware {
+        - 版本号 : String
+        - 下载地址 : URL
+        - MD5校验码 : String
+        - 发布时间 : DateTime
+        .. 需求追踪 ..
+        [UC06 固件管理]
+    }
+
+    class "安全告警 (SecurityAlert)" as Alert {
+        - 告警ID : String
+        - 告警级别 : Enum {低, 中, 高}
+        - 发生时间 : DateTime
+        - 原始报文 : String
+        .. 需求追踪 ..
+        [UC08 安全告警]
+    }
+
+    ' - - - 继承关系 - - -
+    class "网关 (Gateway)" as Gateway {
+        - 最大挂载数 : Integer
+        - 协议类型 : String
+    }
+    
+    class "传感器 (Sensor)" as Sensor {
+        - 采集精度 : Float
+        - 数据单位 : String
+    }
+
+    Device <|- - Gateway
+    Device <|- - Sensor
+
+    ' - - - 关联关系 - - -
+    ' 1. 空间自关联（组合）：楼宇包含房间
+    Space "1 (父)" *- - "0..* (子)" Space : 包含 >
+
+    ' 2. 设备位于空间（聚合）：设备可以移动，不强属于空间
+    Space "1" o- - "0..*" Device : 位于 >
+
+    ' 3. 设备连接网关（关联）：传感器连接网关
+    Gateway "1" - - "0..*" Sensor : 管理连接 >
+
+    ' 4. 设备包含固件信息
+    Device "0..*" - -> "0..1" Firmware : 安装 >
+
+    ' 5. 设备产生告警
+    Device "1" - - "0..*" Alert : 触发 >
+}
+
+' ==========================================
+' 2. Application Layer (应用服务层 - 业务逻辑)
+' ==========================================
+package "应用服务层 (Application Services)" {
+
+    class "拓扑服务 (TopologyService)" as TopologySvc {
+        + 绑定空间关系(deviceId, spaceId)
+        + 构建网络关联(sensorId, gatewayId)
+        + 获取影响范围(deviceId) : List<Device>
+        .. 需求追踪 ..
+        [UC-02 构建拓扑]
+    }
+
+    class "智能体服务 (AgentService)" as AgentSvc {
+        + 解析自然语言(question) : Cypher
+        + 生成分析报告(graphData) : String
+        .. 需求追踪 ..
+        [UC-04 智能查询]
+    }
+
+    class "生命周期服务 (LifecycleService)" as LifeSvc {
+        + 注册设备(metaData)
+        + 灰度升级固件(version, deviceIds)
+        + 退役设备(deviceId)
+        .. 需求追踪 ..
+        [UC-01, UC-06, UC-07]
+    }
+
+    class "指令控制服务 (ControlService)" as ControlSvc {
+        + 下发指令(deviceId, command)
+        + 批量重启(deviceIds)
+        .. 需求追踪 ..
+        [UC-05 远程指令]
+    }
+}
+
+' ==========================================
+' 3. Infrastructure Layer (基础设施层 - 接口定义)
+' ==========================================
+package "基础设施接口 (Infrastructure Interfaces)" {
+
+    interface "图数据库仓库 (GraphRepository)" as GraphRepo {
+        + executeCypher(query)
+        + mergeNode(label, props)
+        + deleteRelationship(from, to)
+        .. 需求追踪 ..
+        [UC-02, UC-04, UC-07]
+    }
+
+    interface "大模型客户端 (LLMClient)" as LLMClient {
+        + chatCompletion(prompt)
+        .. 需求追踪 ..
+        [UC-04 智能查询]
+    }
+
+    interface "IoT连接器 (IoTConnector)" as IoTConn {
+        + sendMqttMessage(topic, payload)
+        + revokeCertificate(certId)
+        .. 需求追踪 ..
+        [UC-01, UC-05, UC-07]
+    }
+}
+
+' ==========================================
+' 跨层依赖关系 (Dependency)
+' ==========================================
+
+' 服务层依赖领域实体 (使用)
+TopologySvc ..> Space : 维护
+TopologySvc ..> Device : 维护
+LifeSvc ..> Device : 管理
+LifeSvc ..> Firmware : 发布
+AgentSvc ..> Device : 查询
+
+' 服务层依赖基础设施接口 (调用)
+TopologySvc ..> GraphRepo : 存取图谱
+AgentSvc ..> GraphRepo : 查询图谱
+AgentSvc ..> LLMClient : 语义分析
+LifeSvc ..> IoTConn : 设备交互
+ControlSvc ..> IoTConn : 指令下发
+
+@enduml
+
+@startuml
+top to bottom direction
+skinparam nodesep 60
+skinparam ranksep 60
+
+skinparam class {
+    BackgroundColor #FEFECE
+    ArrowColor #A80036
+    BorderColor #A80036
+    AttributeFontName Arial
+    AttributeFontSize 11
+}
+skinparam package {
+    BackgroundColor #FFFFFF
+    BorderColor #000000
+    FontName Arial
+}
+
+package "领域模型层 (Domain Model)" {
+
+    class "设备 (Device)" as Device {
+        - 设备ID : String
+        - 设备名称 : String
+        - 在线状态 : Enum {在线, 离线, 告警}
+        - 固件版本 : String
+        - 证书ID : String
+        .. 需求追踪 ..
+        [UC01 注册接入]
+        [UC03 监控状态]
+        [UC07 退役报废]
+    }
+
+    class "空间 (Space)" as Space {
+        - 空间ID : String
+        - 空间名称 : String
+        - 空间类型 : Enum {楼宇, 楼层, 房间}
+        .. 需求追踪 ..
+        [UC02 构建拓扑]
+        [UC04 智能查询]
+    }
+
+    class "固件包 (FirmwarePackage)" as Firmware {
+        - 版本号 : String
+        - 下载地址 : URL
+        - MD5校验码 : String
+        - 发布时间 : DateTime
+        .. 需求追踪 ..
+        [UC06 固件管理]
+    }
+
+    class "安全告警 (SecurityAlert)" as Alert {
+        - 告警ID : String
+        - 告警级别 : Enum {低, 中, 高}
+        - 发生时间 : DateTime
+        - 原始报文 : String
+        .. 需求追踪 ..
+        [UC08 安全告警]
+    }
+
+    class "网关 (Gateway)" as Gateway {
+        - 最大挂载数 : Integer
+        - 协议类型 : String
+    }
+    
+    class "传感器 (Sensor)" as Sensor {
+        - 采集精度 : Float
+        - 数据单位 : String
+    }
+
+    Device <|- - Gateway
+    Device <|- - Sensor
+
+    Space "1 (父)" *- - "0..* (子)" Space : 包含 >
+
+    Space "1" o- - "0..*" Device : 位于 >
+
+    Gateway "1" - - "0..*" Sensor : 管理连接 >
+
+    Device "0..*" - -> "0..1" Firmware : 安装 >
+
+    Device "1" - - "0..*" Alert : 触发 >
+}
+
+package "应用服务层 (Application Services)" {
+
+    class "拓扑服务 (TopologyService)" as TopologySvc {
+        + 绑定空间关系(deviceId, spaceId)
+        + 构建网络关联(sensorId, gatewayId)
+        + 获取影响范围(deviceId) : List<Device>
+        .. 需求追踪 ..
+        [UC-02 构建拓扑]
+    }
+
+    class "智能体服务 (AgentService)" as AgentSvc {
+        + 解析自然语言(question) : Cypher
+        + 生成分析报告(graphData) : String
+        .. 需求追踪 ..
+        [UC-04 智能查询]
+    }
+
+    class "生命周期服务 (LifecycleService)" as LifeSvc {
+        + 注册设备(metaData)
+        + 灰度升级固件(version, deviceIds)
+        + 退役设备(deviceId)
+        .. 需求追踪 ..
+        [UC-01, UC-06, UC-07]
+    }
+
+    class "指令控制服务 (ControlService)" as ControlSvc {
+        + 下发指令(deviceId, command)
+        + 批量重启(deviceIds)
+        .. 需求追踪 ..
+        [UC-05 远程指令]
+    }
+}
+
+package "基础设施接口 (Infrastructure Interfaces)" {
+
+    interface "图数据库仓库 (GraphRepository)" as GraphRepo {
+        + executeCypher(query)
+        + mergeNode(label, props)
+        + deleteRelationship(from, to)
+        .. 需求追踪 ..
+        [UC-02, UC-04, UC-07]
+    }
+
+    interface "大模型客户端 (LLMClient)" as LLMClient {
+        + chatCompletion(prompt)
+        .. 需求追踪 ..
+        [UC-04 智能查询]
+    }
+
+    interface "IoT连接器 (IoTConnector)" as IoTConn {
+        + sendMqttMessage(topic, payload)
+        + revokeCertificate(certId)
+        .. 需求追踪 ..
+        [UC-01, UC-05, UC-07]
+    }
+}
+
+
+TopologySvc ..> Space : 维护
+TopologySvc ..> Device : 维护
+LifeSvc ..> Device : 管理
+LifeSvc ..> Firmware : 发布
+AgentSvc ..> Device : 查询
+
+TopologySvc ..> GraphRepo : 存取图谱
+AgentSvc ..> GraphRepo : 查询图谱
+AgentSvc ..> LLMClient : 语义分析
+LifeSvc ..> IoTConn : 设备交互
+ControlSvc ..> IoTConn : 指令下发
+
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 18:25:05 CST 2021)
+(MIT source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: GBK
+Language: zh
+Country: CN
+--></g></svg>

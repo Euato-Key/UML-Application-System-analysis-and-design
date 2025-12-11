@@ -8,6 +8,7 @@ from app.services.lifecycle_svc import LifecycleService
 from app.infra.graph_db import GraphRepository
 from app.infra.llm_client import LLMClient
 from app.infra.mqtt_client import IoTConnector
+from app.config import settings
 
 
 # 创建路由实例
@@ -21,9 +22,9 @@ def get_graph_repo() -> GraphRepository:
     获取图数据库仓库实例
     """
     return GraphRepository(
-        uri="bolt://localhost:7687",
-        user="neo4j",
-        password="password"
+        uri=settings.NEO4J_URI,
+        user=settings.NEO4J_USER,
+        password=settings.NEO4J_PASSWORD
     )
 
 
@@ -31,7 +32,7 @@ def get_llm_client() -> LLMClient:
     """
     获取大模型客户端实例
     """
-    return LLMClient(api_key="test-api-key")
+    return LLMClient(api_key=settings.LLM_API_KEY)
 
 
 def get_iot_connector() -> IoTConnector:
@@ -39,10 +40,10 @@ def get_iot_connector() -> IoTConnector:
     获取IoT连接器实例
     """
     return IoTConnector(
-        broker="localhost",
-        port=1883,
-        username="mqtt",
-        password="password"
+        broker=settings.MQTT_BROKER,
+        port=settings.MQTT_PORT,
+        username=settings.MQTT_USERNAME or "",
+        password=settings.MQTT_PASSWORD or ""
     )
 
 

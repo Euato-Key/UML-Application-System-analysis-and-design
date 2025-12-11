@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="701px" preserveAspectRatio="none" style="width:685px;height:701px;" version="1.1" viewBox="0 0 685 701" width="685px" zoomAndPan="magnify"><defs><filter height="300%" id="f12ni73gbfb6kj" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[d832dbdc88a9e5d9f452170f9f676380]
+cluster 物联网设备知识图谱交互管理平台--><rect fill="#FFFFFF" filter="url(#f12ni73gbfb6kj)" height="546" style="stroke:#000000;stroke-width:1.5;" width="503" x="170" y="85.91"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="210" x="316.5" y="103.9539">物联网设备知识图谱交互管理平台</text><!--MD5=[8ba8be73f223e332155d0e5ac40c3524]
+cluster 设备接入域--><rect fill="#FFFFFF" filter="url(#f12ni73gbfb6kj)" height="108" style="stroke:#000000;stroke-width:1.5;" width="455" x="194" y="499.91"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="70" x="386.5" y="517.9539">设备接入域</text><!--MD5=[d1b90b87a6b813a852f8195af8407b6b]
+cluster 智能监控域--><rect fill="#FFFFFF" filter="url(#f12ni73gbfb6kj)" height="160" style="stroke:#000000;stroke-width:1.5;" width="183" x="194" y="315.91"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="70" x="250.5" y="333.9539">智能监控域</text><!--MD5=[cef69d30b93792e145fc929af1546c38]
+cluster 控制与响应域--><rect fill="#FFFFFF" filter="url(#f12ni73gbfb6kj)" height="179" style="stroke:#000000;stroke-width:1.5;" width="183" x="466" y="178.91"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="84" x="515.5" y="196.9539">控制与响应域</text><!--MD5=[e54efd7b1c1c05799d72ad9395a6867f]
+cluster 全生命周期域--><rect fill="#FFFFFF" filter="url(#f12ni73gbfb6kj)" height="160" style="stroke:#000000;stroke-width:1.5;" width="183" x="194" y="131.91"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="84" x="243.5" y="149.9539">全生命周期域</text><ellipse cx="285.6639" cy="555.9428" fill="#FEFECE" filter="url(#f12ni73gbfb6kj)" rx="75.6639" ry="17.5328" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="109" x="231.1639" y="559.0253">UC01_注册接入设备</text><ellipse cx="557.6639" cy="556.9428" fill="#FEFECE" filter="url(#f12ni73gbfb6kj)" rx="75.6639" ry="17.5328" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="109" x="503.1639" y="560.0253">UC02_维护图谱拓扑</text><ellipse cx="285.6639" cy="441.9428" fill="#FEFECE" filter="url(#f12ni73gbfb6kj)" rx="75.6639" ry="17.5328" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="109" x="231.1639" y="445.0253">UC03_监控设备状态</text><ellipse cx="285.6639" cy="371.9428" fill="#FEFECE" filter="url(#f12ni73gbfb6kj)" rx="75.6639" ry="17.5328" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="109" x="231.1639" y="375.0253">UC04_智能问答诊断</text><ellipse cx="557.6639" cy="323.9428" fill="#FEFECE" filter="url(#f12ni73gbfb6kj)" rx="75.6639" ry="17.5328" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="109" x="503.1639" y="327.0253">UC05_下发远程指令</text><ellipse cx="557.6639" cy="234.9428" fill="#FEFECE" filter="url(#f12ni73gbfb6kj)" rx="75.6639" ry="17.5328" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="109" x="503.1639" y="238.0253">UC08_响应安全告警</text><ellipse cx="285.6639" cy="187.9428" fill="#FEFECE" filter="url(#f12ni73gbfb6kj)" rx="75.6639" ry="17.5328" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="109" x="231.1639" y="191.0253">UC06_发布固件版本</text><ellipse cx="285.6639" cy="257.9428" fill="#FEFECE" filter="url(#f12ni73gbfb6kj)" rx="75.6639" ry="17.5328" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="109" x="231.1639" y="261.0253">UC07_退役报废设备</text><!--MD5=[03f1e8207d5170aea96e0523cfcc3d25]
+entity Engineer--><ellipse cx="64.5" cy="191.91" fill="#FEFECE" filter="url(#f12ni73gbfb6kj)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><path d="M64.5,199.91 L64.5,226.91 M51.5,207.91 L77.5,207.91 M64.5,226.91 L51.5,241.91 M64.5,226.91 L77.5,241.91 " fill="none" filter="url(#f12ni73gbfb6kj)" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="55" x="37" y="260.5418">运维工程师</text><!--MD5=[327d8b0cc9017ef0d2f4054fa6547e20]
+entity Manager--><ellipse cx="64.5" cy="370.91" fill="#FEFECE" filter="url(#f12ni73gbfb6kj)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><path d="M64.5,378.91 L64.5,405.91 M51.5,386.91 L77.5,386.91 M64.5,405.91 L51.5,420.91 M64.5,405.91 L77.5,420.91 " fill="none" filter="url(#f12ni73gbfb6kj)" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="44" x="42.5" y="439.5418">运营经理</text><!--MD5=[1481f43b514325438f831f19ea58e9e2]
+entity Device--><ellipse cx="64.5" cy="534.5301" fill="#FEFECE" filter="url(#f12ni73gbfb6kj)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><path d="M64.5,542.5301 L64.5,569.5301 M51.5,550.5301 L77.5,550.5301 M64.5,569.5301 L51.5,584.5301 M64.5,569.5301 L77.5,584.5301 " fill="none" filter="url(#f12ni73gbfb6kj)" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacing" textLength="42" x="43.5" y="603.162">IoT设备</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="117" x="6" y="521.9539">«External System»</text><!--MD5=[9e376f390b93d807b16bf3e1d843f92b]
+link UC01 to UC02--><path d="M360.99,556.19 C396.85,556.32 439.88,556.48 476.44,556.62 " fill="none" id="UC01-to-UC02" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="481.78,556.64,472.803,552.5886,476.7801,556.6114,472.7573,560.5885,481.78,556.64" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="394" y="553.8079">«include»</text><!--MD5=[b7b127a125396fc963c9224e4052864f]
+reverse link UC08 to UC05--><path d="M557.5,257.81 C557.5,272.93 557.5,292.43 557.5,306.33 " fill="none" id="UC08-backto-UC05" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="557.5,252.46,553.5,261.46,557.5,257.46,561.5,261.46,557.5,252.46" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="53" x="518.5" y="285.8079">«extend»</text><!--MD5=[8b35d47061c777167a25af62abe45910]
+link Engineer to UC01--><path d="M86.82,263.66 C98.43,286.8 112.53,316.54 123,343.91 C144.86,401.05 125.48,426.84 162,475.91 C182.86,503.94 216.66,524.95 243.48,538.38 " fill="none" id="Engineer-to-UC01" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="248.07,540.64,241.7509,533.0856,243.5808,538.4383,238.2282,540.2683,248.07,540.64" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b044dd3ebd6dcf2cd75c5874cde60c32]
+link Engineer to UC03--><path d="M91.46,263.61 C110.58,294.82 136.24,339.44 154,380.91 C158.76,392.03 153.37,398.45 162,406.91 C175.36,420 193.25,428.26 211.23,433.46 " fill="none" id="Engineer-to-UC03" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="216.3,434.84,208.6712,428.611,211.4765,433.5232,206.5643,436.3286,216.3,434.84" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[521cc8487ffb9fa38f9b7fa24cf5b592]
+link Engineer to UC05--><path d="M92.05,196.93 C110.14,181.13 135.52,162.41 162,153.91 C256.38,123.64 298.24,106 385,153.91 C438.32,183.36 413.65,228.16 458,269.91 C474.1,285.07 495.26,297.4 513.84,306.42 " fill="none" id="Engineer-to-UC05" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="518.51,308.65,512.1141,301.1605,513.9986,306.4942,508.6649,308.3787,518.51,308.65" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[ed55cd2a8a8d12155596940c35499ba8]
+link Engineer to UC06--><path d="M92.35,218.62 C123.41,213.66 175.69,205.3 217.88,198.56 " fill="none" id="Engineer-to-UC06" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="222.97,197.75,213.4454,195.2437,218.0346,198.5511,214.7272,203.1403,222.97,197.75" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[ea5551ec446e0e9350d1205f915c3bbd]
+link Engineer to UC07--><path d="M92.35,227.21 C123.41,232.17 175.69,240.52 217.88,247.27 " fill="none" id="Engineer-to-UC07" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="222.97,248.08,214.7247,242.6934,218.0342,247.2811,213.4465,250.5907,222.97,248.08" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[2f846977aa345c4b3effcf4902089ddb]
+link Engineer to UC08--><path d="M76.49,182.25 C88.67,146.1 112.18,95.44 153,71.91 C267.37,6 333.91,9.09 450,71.91 C505.77,102.09 536.99,175.56 549.69,212.67 " fill="none" id="Engineer-to-UC08" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="551.29,217.45,552.2209,207.6452,549.7003,212.7095,544.6361,210.1888,551.29,217.45" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[8838dfa322844d139ec920a7da5e566f]
+link Manager to UC03--><path d="M86.9,405.82 C117.57,411.43 175.33,421.97 220.51,430.23 " fill="none" id="Manager-to-UC03" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="225.68,431.17,217.5478,425.6141,220.7618,430.2693,216.1067,433.4833,225.68,431.17" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[8f7eba7c93ab8b1ba3a5b78a8a6fc0d3]
+link Manager to UC04--><path d="M86.9,398.98 C116.33,394.95 170.69,387.5 214.96,381.44 " fill="none" id="Manager-to-UC04" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="220.03,380.75,210.5746,377.9942,215.0752,381.4211,211.6483,385.9218,220.03,380.75" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[445b96048098012d9f20383f0b688936]
+link Device to UC01--><path d="M123.04,555.91 C149.53,555.91 181.29,555.91 209.62,555.91 " fill="none" id="Device-UC01" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[ba766685f42e07df8d47b799eea5b746]
+link Device to UC03--><path d="M123.04,525.96 C164.86,504.19 219.85,475.57 253.65,457.97 " fill="none" id="Device-UC03" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[cd4a8ea08376280c1722e44cf266b752]
+link Device to UC05--><path d="M123.06,592.82 C135.45,599.06 148.81,604.59 162,607.91 C286.11,639.22 355.39,694.13 450,607.91 C464.19,594.99 452.75,540.37 458,521.91 C478.23,450.83 523.73,374.69 545.06,341.3 " fill="none" id="Device-UC05" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6312ae794859bd1070fd245ed050caf8]
+link UC04 to UC05--><!--MD5=[87d1365ff893872a772d3434c89daae3]
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+' - - - Rose 风格配色设置 - - -
+skinparam usecase {
+    BackgroundColor #FEFECE
+    BorderColor #A80036
+    ArrowColor #A80036
+    FontName Arial
+}
+skinparam actor {
+    BackgroundColor #FEFECE
+    BorderColor #A80036
+    FontName Arial
+}
+skinparam rectangle {
+    BackgroundColor #FFFFFF
+    BorderColor #000000
+}
+
+' - - - 参与者定义 - - -
+actor "运维工程师" as Engineer
+actor "运营经理" as Manager
+actor "IoT设备" as Device <<External System>>
+
+' - - - 系统边界 - - -
+rectangle "物联网设备知识图谱交互管理平台" {
+
+    ' - - - 模块分组 (逻辑分组，非UML强制，但增加可读性) - - -
+    
+    package "设备接入域" {
+        usecase "UC01_注册接入设备" as UC01
+        usecase "UC02_维护图谱拓扑" as UC02
+        
+        ' 业务规则：接入时必须建立拓扑关系
+        UC01 ..> UC02 : <<include>>
+    }
+
+    package "智能监控域" {
+        usecase "UC03_监控设备状态" as UC03
+        usecase "UC04_智能问答诊断" as UC04
+    }
+
+    package "控制与响应域" {
+        usecase "UC05_下发远程指令" as UC05
+        usecase "UC08_响应安全告警" as UC08
+        
+        ' 业务规则：处理告警时，可能需要下发阻断/重启指令
+        UC08 <. UC05 : <<extend>>
+    }
+
+    package "全生命周期域" {
+        usecase "UC06_发布固件版本" as UC06
+        usecase "UC07_退役报废设备" as UC07
+    }
+}
+
+' - - - 关系定义 - - -
+
+' 1. 运维工程师 (DevOps) - 负责生老病死
+Engineer - -> UC01
+Engineer - -> UC03
+Engineer - -> UC05
+Engineer - -> UC06
+Engineer - -> UC07
+Engineer - -> UC08
+
+' 2. 运营经理 (Manager) - 负责决策与查看
+Manager - -> UC03
+Manager - -> UC04
+
+' 3. IoT设备 (Device) - 外部交互
+' 设备参与注册握手
+Device - - UC01
+' 设备持续上报状态
+Device - - UC03
+' 设备接收控制指令
+Device - - UC05
+
+' - - - 布局辅助 (可选，防止线条过于交叉) - - -
+UC04 -[hidden]- UC05
+
+@enduml
+
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+skinparam usecase {
+    BackgroundColor #FEFECE
+    BorderColor #A80036
+    ArrowColor #A80036
+    FontName Arial
+}
+skinparam actor {
+    BackgroundColor #FEFECE
+    BorderColor #A80036
+    FontName Arial
+}
+skinparam rectangle {
+    BackgroundColor #FFFFFF
+    BorderColor #000000
+}
+
+actor "运维工程师" as Engineer
+actor "运营经理" as Manager
+actor "IoT设备" as Device <<External System>>
+
+rectangle "物联网设备知识图谱交互管理平台" {
+
+    
+    package "设备接入域" {
+        usecase "UC01_注册接入设备" as UC01
+        usecase "UC02_维护图谱拓扑" as UC02
+        
+        UC01 ..> UC02 : <<include>>
+    }
+
+    package "智能监控域" {
+        usecase "UC03_监控设备状态" as UC03
+        usecase "UC04_智能问答诊断" as UC04
+    }
+
+    package "控制与响应域" {
+        usecase "UC05_下发远程指令" as UC05
+        usecase "UC08_响应安全告警" as UC08
+        
+        UC08 <. UC05 : <<extend>>
+    }
+
+    package "全生命周期域" {
+        usecase "UC06_发布固件版本" as UC06
+        usecase "UC07_退役报废设备" as UC07
+    }
+}
+
+
+Engineer - -> UC01
+Engineer - -> UC03
+Engineer - -> UC05
+Engineer - -> UC06
+Engineer - -> UC07
+Engineer - -> UC08
+
+Manager - -> UC03
+Manager - -> UC04
+
+Device - - UC01
+Device - - UC03
+Device - - UC05
+
+UC04 -[hidden]- UC05
+
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 18:25:05 CST 2021)
+(MIT source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: GBK
+Language: zh
+Country: CN
+--></g></svg>

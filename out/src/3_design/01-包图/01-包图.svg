@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1227px" preserveAspectRatio="none" style="width:2578px;height:1227px;" version="1.1" viewBox="0 0 2578 1227" width="2578px" zoomAndPan="magnify"><defs><filter height="300%" id="fvh1twaz25nwb" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[fdc00235d1aa2e56626a568e5d132ea7]
+cluster UI_Layer--><polygon fill="#FEFECE" filter="url(#fvh1twaz25nwb)" points="87.71,6,252.71,6,259.71,28.0986,441.71,28.0986,441.71,350.5,87.71,350.5,87.71,6" style="stroke:#A80036;stroke-width:1.5;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="87.71" x2="259.71" y1="28.0986" y2="28.0986"/><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="159" x="91.71" y="21.1318">用户界面层 (Presentation)</text><!--MD5=[264022aa006fe906dcab6c454900eb41]
+cluster App_Layer--><polygon fill="#FEFECE" filter="url(#fvh1twaz25nwb)" points="481.71,177,634.71,177,641.71,199.0986,1559.71,199.0986,1559.71,575,481.71,575,481.71,177" style="stroke:#A80036;stroke-width:1.5;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="481.71" x2="641.71" y1="199.0986" y2="199.0986"/><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="147" x="485.71" y="192.1318">应用服务层 (Application)</text><!--MD5=[ed0572ce9307dadb0aadbc348d9714eb]
+cluster Pkg_Agent--><polygon fill="#FEFECE" filter="url(#fvh1twaz25nwb)" points="1110.71,236,1280.71,236,1287.71,258.0986,1458.71,258.0986,1458.71,352,1110.71,352,1110.71,236" style="stroke:#A80036;stroke-width:1.5;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="1110.71" x2="1287.71" y1="258.0986" y2="258.0986"/><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="164" x="1114.71" y="251.1318">智能体服务 (AgentService)</text><!--MD5=[e716e9bdab42bd6660fdf2ebfcf6cfcd]
+cluster Pkg_Lifecycle--><polygon fill="#FEFECE" filter="url(#fvh1twaz25nwb)" points="521.71,236,751.71,236,758.71,258.0986,815.71,258.0986,815.71,535,521.71,535,521.71,236" style="stroke:#A80036;stroke-width:1.5;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="521.71" x2="758.71" y1="258.0986" y2="258.0986"/><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="224" x="525.71" y="251.1318">设备全生命周期服务 (DeviceLifecycle)</text><!--MD5=[eb3db58aeaab8cbd4854bfabc03ec550]
+cluster Pkg_Topology--><polygon fill="#FEFECE" filter="url(#fvh1twaz25nwb)" points="1189.71,419,1393.71,419,1400.71,441.0986,1511.71,441.0986,1511.71,535,1189.71,535,1189.71,419" style="stroke:#A80036;stroke-width:1.5;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="1189.71" x2="1400.71" y1="441.0986" y2="441.0986"/><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="198" x="1193.71" y="434.1318">图谱拓扑服务 (TopologyService)</text><!--MD5=[fc4c65a239d4610bce0aceffd7ed7422]
+cluster Pkg_Control--><polygon fill="#FEFECE" filter="url(#fvh1twaz25nwb)" points="855.71,419,1047.71,419,1054.71,441.0986,1149.71,441.0986,1149.71,535,855.71,535,855.71,419" style="stroke:#A80036;stroke-width:1.5;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="855.71" x2="1054.71" y1="441.0986" y2="441.0986"/><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="186" x="859.71" y="434.1318">指令控制服务 (ControlService)</text><!--MD5=[54c10da10a92add6f3207f0c3aabb530]
+cluster Infra_Layer--><polygon fill="#FEFECE" filter="url(#fvh1twaz25nwb)" points="921.71,642,1093.71,642,1100.71,664.0986,1917.71,664.0986,1917.71,857,921.71,857,921.71,642" style="stroke:#A80036;stroke-width:1.5;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="921.71" x2="1100.71" y1="664.0986" y2="664.0986"/><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="166" x="925.71" y="657.1318">基础设施层 (Infrastructure)</text><!--MD5=[1b7f8254bf0f834d9dba65b6527264af]
+cluster Pkg_Neo4j--><polygon fill="#FEFECE" filter="url(#fvh1twaz25nwb)" points="969.71,701,1164.71,701,1171.71,723.0986,1174.71,723.0986,1174.71,817,969.71,817,969.71,701" style="stroke:#A80036;stroke-width:1.5;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="969.71" x2="1171.71" y1="723.0986" y2="723.0986"/><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="189" x="973.71" y="716.1318">图数据库适配器 (GraphAdapter)</text><!--MD5=[602cbcc9801ee82fb7ac55f87cfd9368]
+cluster Pkg_LLM--><polygon fill="#FEFECE" filter="url(#fvh1twaz25nwb)" points="1618.71,701,1781.71,701,1788.71,723.0986,1877.71,723.0986,1877.71,817,1618.71,817,1618.71,701" style="stroke:#A80036;stroke-width:1.5;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="1618.71" x2="1788.71" y1="723.0986" y2="723.0986"/><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="157" x="1622.71" y="716.1318">大模型网关 (LLMGateway)</text><!--MD5=[aa15cbbbef24a3258153dec56230f654]
+cluster Pkg_MQTT--><polygon fill="#FEFECE" filter="url(#fvh1twaz25nwb)" points="1214.71,701,1383.71,701,1390.71,723.0986,1578.71,723.0986,1578.71,817,1214.71,817,1214.71,701" style="stroke:#A80036;stroke-width:1.5;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="1214.71" x2="1390.71" y1="723.0986" y2="723.0986"/><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="163" x="1218.71" y="716.1318">IoT连接器 (IoTConnector)</text><!--MD5=[6792615b602cbe055a48903ef17dc7a2]
+cluster Domain_Layer--><polygon fill="#FEFECE" filter="url(#fvh1twaz25nwb)" points="1951.71,924,2140.71,924,2147.71,946.0986,2561.71,946.0986,2561.71,1220,1951.71,1220,1951.71,924" style="stroke:#A80036;stroke-width:1.5;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="1951.71" x2="2147.71" y1="946.0986" y2="946.0986"/><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="183" x="1955.71" y="939.1318">领域模型层 (Domain / Shared)</text><!--MD5=[457a4ac794c292b2a56ef3284c752c4e]
+cluster Pkg_Model--><polygon fill="#FEFECE" filter="url(#fvh1twaz25nwb)" points="2150.71,975,2314.71,975,2321.71,997.0986,2529.71,997.0986,2529.71,1188,2150.71,1188,2150.71,975" style="stroke:#A80036;stroke-width:1.5;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="2150.71" x2="2321.71" y1="997.0986" y2="997.0986"/><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="158" x="2154.71" y="990.1318">核心实体模型 (CoreModel)</text><!--MD5=[4613ecd3e591fb1a3b5ea92550707a53]
+entity WebPortal--><polygon fill="#FEFECE" filter="url(#fvh1twaz25nwb)" points="111.71,49,201.71,49,208.71,71.0986,225.71,71.0986,225.71,104.1973,111.71,104.1973,111.71,49" style="stroke:#A80036;stroke-width:1.5;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="111.71" x2="208.71" y1="71.0986" y2="71.0986"/><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="72" x="121.71" y="65.1318">WebPortal</text><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="75" x="121.71" y="91.2305">Web管理门户</text><path d="M191.21,280.5 L191.21,326.0088 A0,0 0 0 0 191.21,326.0088 L290.21,326.0088 A0,0 0 0 0 290.21,326.0088 L290.21,290.5 L280.21,280.5 L237.58,280.5 L177.25,104.19 L229.58,280.5 L191.21,280.5 A0,0 0 0 0 191.21,280.5 " fill="#FBFB77" filter="url(#fvh1twaz25nwb)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M280.21,280.5 L280.21,290.5 L290.21,290.5 L280.21,280.5 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="78" x="197.21" y="300.3979">对应运营经理</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="65" x="197.21" y="318.1523">的全景看板</text><!--MD5=[feff9ba39bc04c58d85c7337bc0c9ec0]
+entity ChatInterface--><polygon fill="#FEFECE" filter="url(#fvh1twaz25nwb)" points="261.21,49,374.21,49,381.21,71.0986,398.21,71.0986,398.21,104.1973,261.21,104.1973,261.21,49" style="stroke:#A80036;stroke-width:1.5;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="261.21" x2="381.21" y1="71.0986" y2="71.0986"/><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="95" x="271.21" y="65.1318">ChatInterface</text><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="66" x="271.21" y="91.2305">智能问答组件</text><path d="M325.21,280.5 L325.21,326.0088 A0,0 0 0 0 325.21,326.0088 L398.21,326.0088 A0,0 0 0 0 398.21,326.0088 L398.21,290.5 L388.21,280.5 L362.54,280.5 L333.51,104.19 L354.54,280.5 L325.21,280.5 A0,0 0 0 0 325.21,280.5 " fill="#FBFB77" filter="url(#fvh1twaz25nwb)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M388.21,280.5 L388.21,290.5 L398.21,290.5 L388.21,280.5 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="331.21" y="300.3979">对应LLM</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="331.21" y="318.1523">对话窗口</text><!--MD5=[ceba30352da1c65dc037463b9a2ec590]
+entity 意图识别--><rect fill="#FEFECE" filter="url(#fvh1twaz25nwb)" height="49.1201" style="stroke:#A80036;stroke-width:1.5;" width="96" x="1338.71" y="279"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1414.71" y="284"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1412.71" y="286"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1412.71" y="290"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="1353.71" y="315.0439">意图识别</text><!--MD5=[16ccec32ff572825865fc58134f109b2]
+entity Text2Cypher转换--><rect fill="#FEFECE" filter="url(#fvh1twaz25nwb)" height="49.1201" style="stroke:#A80036;stroke-width:1.5;" width="149" x="1154.21" y="279"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1283.21" y="284"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1281.21" y="286"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1281.21" y="290"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="1169.21" y="315.0439">Text2Cypher转换</text><!--MD5=[9c52d0e45f8e64657f049479bbde89a0]
+entity 接入认证--><rect fill="#FEFECE" filter="url(#fvh1twaz25nwb)" height="49.1201" style="stroke:#A80036;stroke-width:1.5;" width="96" x="545.71" y="279"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="621.71" y="284"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="619.71" y="286"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="619.71" y="290"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="560.71" y="315.0439">接入认证</text><!--MD5=[e5aa2848e608c9820e496fc0fb385d1c]
+entity 固件升级--><rect fill="#FEFECE" filter="url(#fvh1twaz25nwb)" height="49.1201" style="stroke:#A80036;stroke-width:1.5;" width="96" x="676.71" y="279"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="752.71" y="284"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="750.71" y="286"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="750.71" y="290"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="691.71" y="315.0439">固件升级</text><!--MD5=[cbc609cd54318e5029db9f41457d935e]
+entity 退役清洗--><rect fill="#FEFECE" filter="url(#fvh1twaz25nwb)" height="49.1201" style="stroke:#A80036;stroke-width:1.5;" width="96" x="545.71" y="462"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="621.71" y="467"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="619.71" y="469"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="619.71" y="473"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="560.71" y="498.0439">退役清洗</text><!--MD5=[e2a02185040dd313eccbbb5ee7d69347]
+entity 关系构建--><rect fill="#FEFECE" filter="url(#fvh1twaz25nwb)" height="49.1201" style="stroke:#A80036;stroke-width:1.5;" width="96" x="1391.71" y="462"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1467.71" y="467"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1465.71" y="469"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1465.71" y="473"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="1406.71" y="498.0439">关系构建</text><!--MD5=[0d215347b1db54562d3cc6fc33c93d69]
+entity 影响范围分析--><rect fill="#FEFECE" filter="url(#fvh1twaz25nwb)" height="49.1201" style="stroke:#A80036;stroke-width:1.5;" width="124" x="1232.71" y="462"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1336.71" y="467"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1334.71" y="469"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1334.71" y="473"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="1247.71" y="498.0439">影响范围分析</text><!--MD5=[e0e6ed61da299715c4192fb0896ecafb]
+entity 指令翻译--><rect fill="#FEFECE" filter="url(#fvh1twaz25nwb)" height="49.1201" style="stroke:#A80036;stroke-width:1.5;" width="96" x="1029.71" y="462"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1105.71" y="467"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1103.71" y="469"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1103.71" y="473"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="1044.71" y="498.0439">指令翻译</text><!--MD5=[79896b77d2920568e6293f062c7967e3]
+entity 批量下发--><rect fill="#FEFECE" filter="url(#fvh1twaz25nwb)" height="49.1201" style="stroke:#A80036;stroke-width:1.5;" width="96" x="898.71" y="462"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="974.71" y="467"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="972.71" y="469"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="972.71" y="473"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="913.71" y="498.0439">批量下发</text><!--MD5=[2da157831cc3fb4d4c070a6e530876c6]
+entity Neo4j Driver--><rect fill="#FEFECE" filter="url(#fvh1twaz25nwb)" height="49.1201" style="stroke:#A80036;stroke-width:1.5;" width="118" x="1032.71" y="744"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1130.71" y="749"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1128.71" y="751"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1128.71" y="755"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="1047.71" y="780.0439">Neo4j Driver</text><!--MD5=[4503db2911d3bf92f07eda4a7256d7cf]
+entity OpenAI/LocalLLM Client--><rect fill="#FEFECE" filter="url(#fvh1twaz25nwb)" height="49.1201" style="stroke:#A80036;stroke-width:1.5;" width="192" x="1661.71" y="744"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1833.71" y="749"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1831.71" y="751"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1831.71" y="755"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="152" x="1676.71" y="780.0439">OpenAI/LocalLLM Client</text><!--MD5=[3dcf09b9791ba76111f3a3432d69c32e]
+entity MQTT Broker Client--><rect fill="#FEFECE" filter="url(#fvh1twaz25nwb)" height="49.1201" style="stroke:#A80036;stroke-width:1.5;" width="166" x="1388.71" y="744"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1534.71" y="749"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1532.71" y="751"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1532.71" y="755"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="1403.71" y="780.0439">MQTT Broker Client</text><!--MD5=[906b6ff7a20ca937eb594db19bc0a1cd]
+entity 证书管理--><rect fill="#FEFECE" filter="url(#fvh1twaz25nwb)" height="49.1201" style="stroke:#A80036;stroke-width:1.5;" width="96" x="1257.71" y="744"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="1333.71" y="749"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1331.71" y="751"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="1331.71" y="755"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="1272.71" y="780.0439">证书管理</text><!--MD5=[63600da6d7afb80c27c388c034eef2e5]
+entity Device (设备)--><rect fill="#FEFECE" filter="url(#fvh1twaz25nwb)" height="49.1201" style="stroke:#A80036;stroke-width:1.5;" width="125" x="2167.21" y="1010"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="2272.21" y="1015"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="2270.21" y="1017"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="2270.21" y="1021"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="2182.21" y="1046.0439">Device (设备)</text><!--MD5=[36cd4b497e9fec9ff98a34b0b951421f]
+entity Space (空间:楼宇/房间)--><rect fill="#FEFECE" filter="url(#fvh1twaz25nwb)" height="49.1201" style="stroke:#A80036;stroke-width:1.5;" width="186" x="2327.71" y="1010"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="2493.71" y="1015"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="2491.71" y="1017"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="2491.71" y="1021"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="2342.71" y="1046.0439">Space (空间:楼宇/房间)</text><!--MD5=[4fd1cf99d4e33aacd8824c03a04590a8]
+entity TopologyRelation (拓扑关系)--><rect fill="#FEFECE" filter="url(#fvh1twaz25nwb)" height="49.1201" style="stroke:#A80036;stroke-width:1.5;" width="221" x="2167.21" y="1123"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="2368.21" y="1128"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="2366.21" y="1130"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="2366.21" y="1134"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="181" x="2182.21" y="1159.0439">TopologyRelation (拓扑关系)</text><!--MD5=[0c64458599e9c5178efaf508df4afeda]
+entity Pkg_Common--><polygon fill="#FEFECE" filter="url(#fvh1twaz25nwb)" points="1995.21,1007,2108.21,1007,2115.21,1029.0986,2132.21,1029.0986,2132.21,1062.1973,1995.21,1062.1973,1995.21,1007" style="stroke:#A80036;stroke-width:1.5;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="1995.21" x2="2115.21" y1="1029.0986" y2="1029.0986"/><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="95" x="2005.21" y="1023.1318">Pkg_Common</text><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="84" x="2005.21" y="1049.2305">通用DTO与异常</text><!--MD5=[95f032601e3a28a958dccee8990d92e5]
+link WebPortal to Pkg_Lifecycle--><path d="M226.04,99.29 C231.95,101.08 237.92,102.69 243.71,104 C258.56,107.35 777.79,150.4 788.71,161 C799.9125,171.88 806.7519,185.9744 810.6972,201.0422 C812.6698,208.5761 813.919,216.3534 814.6282,224.0939 C814.9829,227.9641 815.2025,231.8252 815.3102,235.642 " fill="none" id="WebPortal-to-Pkg_Lifecycle" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="815.3102,235.642,819.0549,226.5329,815.1692,230.644,811.058,226.7584,815.3102,235.642" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="740.71" y="149.8979">use</text><!--MD5=[8eb6b0c7c2e308d2e0612e1a16ff0244]
+link WebPortal to Pkg_Topology--><path d="M155.67,104.38 C130.03,161.57 81.3,295.94 150.71,368 C206.09,425.5 788.92,392.33 868.71,395 C883.87,395.51 1128.41,395.7 1141.71,403 C1160.83,413.495 1174.695,433.645 1183.8463,451.4038 C1184.9902,453.6236 1186.0604,455.8061 1187.0581,457.9277 C1187.5569,458.9885 1188.0376,460.034 1188.5002,461.0614 C1188.7316,461.5751 1188.9584,462.0843 1189.1807,462.5886 C1189.2919,462.8407 1189.402,463.0916 1189.5109,463.3412 C1189.5654,463.466 1189.6195,463.5905 1189.6734,463.7147 " fill="none" id="WebPortal-to-Pkg_Topology" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="1189.6734,463.7147,1189.7587,453.8662,1187.6824,459.1282,1182.4204,457.0519,1189.6734,463.7147" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="151.71" y="309.8979">use</text><!--MD5=[ce94f706dea3baff82d5d970bb376cff]
+link WebPortal to Pkg_Control--><path d="M119.95,104.13 C99.52,118.12 77.93,137.32 66.71,161 C21.54,256.35 6,363.54 106.71,395 C142.88,406.3 754.15,387.47 788.71,403 C810.955,413 829.47,433.1425 842.5388,451.02 C845.8059,455.4894 848.7327,459.8172 851.2923,463.8096 C852.5721,465.8058 853.7601,467.7181 854.853,469.5223 C855.1262,469.9734 855.3934,470.4177 855.6547,470.8549 " fill="none" id="WebPortal-to-Pkg_Control" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="855.6547,470.8549,854.4713,461.0774,853.0897,466.5629,847.6042,465.1813,855.6547,470.8549" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="67.71" y="309.8979">use</text><!--MD5=[ca67f27c484c15c018ceaac25de6a8c6]
+link ChatInterface to Pkg_Agent--><path d="M398.57,103.28 C399.62,103.53 400.67,103.77 401.71,104 C562.4,139.41 611.96,90.74 770.71,134 C852.315,156.235 937.8925,197.4025 1003.7638,233.4788 C1036.6994,251.5169 1064.7084,268.2822 1084.8311,280.7717 C1094.8924,287.0165 1102.9821,292.1923 1108.7303,295.9238 C1109.0896,296.157 1109.4397,296.3846 1109.7805,296.6064 C1109.951,296.7174 1110.1191,296.8269 1110.2849,296.9349 " fill="none" id="ChatInterface-to-Pkg_Agent" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="1110.2849,296.9349,1104.9283,288.6701,1106.0958,294.2052,1100.5607,295.3727,1110.2849,296.9349" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="822.71" y="149.8979">use</text><!--MD5=[69688f4b9caac3cead42cdf967118d8d]
+link Pkg_Agent to Pkg_Topology--><path d="M1131.9456,352.1667 C1131.9823,352.2767 1132.0191,352.3866 1132.056,352.4966 C1132.6452,354.2562 1133.2487,356.0135 1133.865,357.7584 C1135.0978,361.2483 1136.3825,364.6888 1137.71,368 C1148.455,394.785 1163.1575,423.6675 1175.3188,446.0938 C1178.3591,451.7003 1181.2405,456.9034 1183.8617,461.5692 C1185.1722,463.9022 1186.4177,466.1008 1187.5854,468.1485 C1188.1692,469.1723 1188.7336,470.1584 1189.277,471.1046 C1189.4128,471.3412 1189.5473,471.5752 1189.6805,471.8068 " fill="none" id="Pkg_Agent-to-Pkg_Topology" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="1189.6805,471.8068,1188.6604,462.0109,1187.1875,467.4726,1181.7258,465.9997,1189.6805,471.8068" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="1149.71" y="391.8979">查询图谱</text><!--MD5=[0009e632ff42c78d60b7b3302f66ea26]
+link Pkg_Agent to Pkg_Control--><path d="M1110.4519,313.2996 C1110.2692,313.4875 1110.0838,313.6779 1109.8956,313.8707 C1109.143,314.642 1108.3462,315.4526 1107.5069,316.2992 C1100.7925,323.0722 1091.3575,332.1519 1080.02,341.8887 C1057.345,361.3625 1027.06,383.465 995.71,395 C972.08,403.69 901.84,386.64 882.71,403 C879.2475,405.9613 876.345,409.4152 873.9176,413.199 C873.3108,414.1449 872.7337,415.1115 872.1849,416.0961 C871.9105,416.5885 871.6432,417.0853 871.3828,417.5863 C871.2526,417.8369 871.1242,418.0884 870.9974,418.341 C870.9341,418.4673 870.8711,418.5939 870.8086,418.7206 " fill="none" id="Pkg_Agent-to-Pkg_Control" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="870.8086,418.7206,878.3764,412.4175,873.0198,414.2362,871.2012,408.8796,870.8086,418.7206" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="1034.71" y="391.8979">触发指令</text><!--MD5=[b2541ec6b3bb398b50fe7a55978bab80]
+link Pkg_Lifecycle to Pkg_Topology--><path d="M815.7656,315.8021 C815.9227,316.0114 816.0819,316.2231 816.2433,316.437 C821.4066,323.2828 828.7331,332.4481 837.7262,342.2413 C855.7125,361.8275 880.365,383.925 907.71,395 C931.82,404.77 1118.93,390.43 1141.71,403 C1160.805,413.54 1174.67,433.69 1183.8275,451.4375 C1184.9722,453.6559 1186.0433,455.8368 1187.0419,457.9567 C1187.5412,459.0167 1188.0224,460.0614 1188.4855,461.0879 C1188.7171,461.6012 1188.9442,462.1099 1189.1668,462.6137 C1189.2781,462.8656 1189.3883,463.1162 1189.4973,463.3656 C1189.5518,463.4903 1189.6061,463.6147 1189.6601,463.7388 " fill="none" id="Pkg_Lifecycle-to-Pkg_Topology" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="1189.6601,463.7388,1189.7377,453.8902,1187.6655,459.1538,1182.4019,457.0816,1189.6601,463.7388" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="78" x="908.71" y="391.8979">维护节点状态</text><!--MD5=[62f271a0e3b87a63db182ebc84dd51db]
+link Pkg_Agent to Pkg_LLM--><path d="M1125.5608,352.0693 C1125.6073,352.1707 1125.654,352.2719 1125.7011,352.373 C1125.8892,352.7772 1126.0821,353.1789 1126.2798,353.5779 C1126.6751,354.3757 1127.0897,355.1624 1127.5243,355.936 C1128.3935,357.4831 1129.3432,358.9776 1130.3803,360.4032 C1132.4545,363.2544 1134.8788,365.83 1137.71,368 C1150.55,377.84 1412.58,374.78 1428.71,376 C1477.16,379.67 1613.54,366.58 1645.71,403 C1659.03,418.08 1654.4575,507.905 1646.4675,594.6025 C1644.47,616.2769 1642.2589,637.7558 1640.0604,657.8225 C1638.9611,667.8558 1637.865,677.5361 1636.8003,686.7112 C1636.268,691.2988 1635.7435,695.7601 1635.2304,700.076 " fill="none" id="Pkg_Agent-to-Pkg_LLM" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="1635.2304,700.076,1640.2649,691.6112,1635.8206,695.111,1632.3208,690.6668,1635.2304,700.076" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="65" x="1654.71" y="492.8979">调用大模型</text><!--MD5=[4e99fc67d50978c6296b680dc4d5b79c]
+link Pkg_Topology to Pkg_Neo4j--><path d="M1189.6018,515.0046 C1189.5481,515.1563 1189.4942,515.3084 1189.4399,515.4609 C1189.3315,515.7659 1189.2218,516.0724 1189.111,516.3804 C1188.6679,517.6126 1188.2062,518.8689 1187.7258,520.1462 C1186.7648,522.7007 1185.7288,525.3392 1184.615,528.0363 C1175.705,549.6125 1161.825,574.935 1141.71,591 C1096.63,627 1054.56,582.46 1016.71,626 C1011.5875,631.8925 1007.8356,643.4544 1005.09,657.5383 C1003.7172,664.5802 1002.5959,672.2527 1001.6807,680.1622 C1001.2231,684.117 1000.817,688.1311 1000.4567,692.1552 C1000.2765,694.1673 1000.1078,696.1819 999.9499,698.1929 C999.9104,698.6956 999.8716,699.1981 999.8334,699.7003 C999.8143,699.9514 999.7954,700.2024 999.7767,700.4533 " fill="none" id="Pkg_Topology-to-Pkg_Neo4j" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="999.7767,700.4533,1004.4362,691.7764,1000.1492,695.4672,996.4584,691.1803,999.7767,700.4533" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="67" x="1128.71" y="614.8979">执行Cypher</text><!--MD5=[6fbdfd86a56bab72fa84b23d3605aaf9]
+link Pkg_Lifecycle to Pkg_MQTT--><path d="M816.0889,306.7483 C816.2438,306.7894 816.4006,306.8311 816.5594,306.8733 C821.6425,308.2235 828.7796,310.0995 837.6136,312.3716 C855.2816,316.9156 879.7369,323.0438 908.1212,329.7175 C964.89,343.065 1037.375,358.595 1102.71,368 C1146.98,374.37 1473.57,369.96 1503.71,403 C1560.02,464.73 1558.74,528.13 1503.71,591 C1426.33,679.4 1324.81,542.96 1241.71,626 C1230.665,637.0375 1223.9056,651.2119 1219.9914,666.3108 C1218.0343,673.8602 1216.7885,681.6408 1216.0739,689.376 C1215.7166,693.2436 1215.4921,697.0998 1215.3779,700.9101 " fill="none" id="Pkg_Lifecycle-to-Pkg_MQTT" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="1215.3779,700.9101,1219.6457,692.034,1215.5277,695.9124,1211.6493,691.7944,1215.3779,700.9101" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="91" x="1545.71" y="492.8979">监听设备上下线</text><!--MD5=[50d11d0b2ed772de2b919c3f37fc31c5]
+link Pkg_Control to Pkg_MQTT--><path d="M862.2984,535.1812 C862.5573,537.9434 862.8886,540.7457 863.305,543.5646 C864.1377,549.2023 865.3105,554.9063 866.9245,560.488 C870.1525,571.6513 875.145,582.325 882.71,591 C907.93,619.92 926.95,611.17 964.71,618 C986.81,622 1148.39,613.01 1166.71,626 C1180.2875,635.6275 1190.5738,649.0863 1198.3664,663.9075 C1202.2627,671.3181 1205.5357,679.0694 1208.2849,686.8527 C1209.6595,690.7443 1210.9032,694.6439 1212.0285,698.513 C1212.5911,700.4476 1213.1241,702.3745 1213.629,704.2889 C1213.8815,705.2461 1214.127,706.2002 1214.3656,707.1506 C1214.4253,707.3882 1214.4845,707.6256 1214.5433,707.8627 " fill="none" id="Pkg_Control-to-Pkg_MQTT" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="1214.5433,707.8627,1216.2591,698.1644,1213.3397,703.0097,1208.4944,700.0902,1214.5433,707.8627" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="965.71" y="614.8979">下发指令</text><!--MD5=[e83944214adcb416e21010dee57c7263]
+link Infra_Layer to Domain_Layer--><path d="M948.5373,857.3969 C948.6361,857.5537 948.7353,857.7102 948.8351,857.8663 C949.2342,858.4906 949.6414,859.1091 950.0569,859.7213 C953.3811,864.6191 957.2375,869.115 961.71,873 C1045.84,946.075 1292.115,986.1475 1518.9513,1007.9775 C1632.3694,1018.8925 1740.9278,1025.2469 1821.9286,1028.8856 C1862.429,1030.705 1896.04,1031.8455 1919.9243,1032.5377 C1931.8664,1032.8838 1941.3769,1033.1178 1948.1011,1033.2686 C1948.9416,1033.2874 1949.7386,1033.3049 1950.4914,1033.3213 C1950.8677,1033.3294 1951.2331,1033.3372 1951.5872,1033.3448 " fill="none" id="Infra_Layer-to-Domain_Layer" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="1951.5872,1033.3448,1942.6744,1029.1542,1946.5884,1033.2384,1942.5042,1037.1524,1951.5872,1033.3448" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="1000.71" y="896.8979">将数据映射为对象</text><!--MD5=[f2c73339ad77b6a1982a6f2a53cffcf4]
+link App_Layer to Domain_Layer--><path d="M1559.797,307.3291 C1560.0428,307.4179 1560.2938,307.5088 1560.5497,307.6018 C1561.5734,307.9736 1562.6775,308.3782 1563.8573,308.8153 C1566.2168,309.6897 1568.8792,310.694 1571.8077,311.8258 C1583.5216,316.3528 1599.4931,322.9181 1617.3713,331.3513 C1653.1275,348.2175 1696.51,372.555 1728.71,403 C1836.29,504.715 1893.9825,660.6825 1924.8088,792.04 C1932.5153,824.8794 1938.5427,856.1806 1943.2507,884.7115 C1945.6047,898.977 1947.6289,912.5498 1949.3681,925.2761 C1949.8029,928.4576 1950.2199,931.5863 1950.6198,934.6596 C1950.8198,936.1963 1951.0154,937.7191 1951.2069,939.2278 C1951.3027,939.9822 1951.3974,940.733 1951.491,941.4802 " fill="none" id="App_Layer-to-Domain_Layer" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="1951.491,941.4802,1954.3407,932.0526,1950.8692,936.5191,1946.4028,933.0476,1951.491,941.4802" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="78" x="1869.71" y="614.8979">核心逻辑载体</text><!--MD5=[5783361a780b1e5adcb23bed70c8abc5]
+link UI_Layer to Domain_Layer--><path d="M442.4092,77.7383 C443.4483,77.7678 444.5776,77.8002 445.7955,77.8355 C448.2314,77.906 451.022,77.988 454.155,78.0817 C466.6869,78.4568 484.6971,79.021 507.3993,79.7979 C552.8037,81.3517 616.9765,83.7565 693.6286,87.2017 C846.9328,94.0922 1050.1544,105.1444 1252.9813,121.8737 C1658.635,155.3325 2062.71,211.5 2062.71,302.5 C2062.71,302.5 2062.71,302.5 2062.71,769.5 C2062.71,841.49 2003.24,840.32 1978.71,908 C1977.5275,911.2631 1976.4186,914.5998 1975.3787,917.9885 C1974.8588,919.6829 1974.3561,921.3903 1973.8701,923.1081 C1973.8093,923.3228 1973.7488,923.5377 1973.6886,923.7527 " fill="none" id="UI_Layer-to-Domain_Layer" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="1973.6886,923.7527,1979.9678,916.1651,1975.0371,918.938,1972.2642,914.0074,1973.6886,923.7527" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="75" x="2063.71" y="492.8979">展示VO/DTO</text><!--MD5=[9ab30738f8a1add367af799119af3628]
+link 接入认证 to 固件升级--><!--MD5=[2000f9e0e4ac676e94d4a3780f67e985]
+link 接入认证 to 退役清洗--><!--MD5=[972fab0df96eaf5bb25b3835cbb7d382]
+link Device (设备) to Space (空间:楼宇/房间)--><!--MD5=[2fe8f42ac4eba04d047bc9a41632510d]
+link Device (设备) to TopologyRelation (拓扑关系)--><!--MD5=[ec252fd01bbb73e1e40d4bae8d9dd770]
+@startuml
+' - - - 布局方向：自上而下 - - -
+top to bottom direction
+
+' - - - Rose 风格配色 - - -
+skinparam package {
+    BackgroundColor #FEFECE
+    BorderColor #A80036
+    FontName Arial
+    FontColor #000000
+}
+skinparam componentStyle uml2
+
+' ==========================================
+' 1. 用户界面层 (Presentation Layer)
+' ==========================================
+package "用户界面层 (Presentation)" as UI_Layer {
+    package "Web管理门户" as WebPortal
+    note bottom of WebPortal: 对应运营经理\n的全景看板
+    
+    package "智能问答组件" as ChatInterface
+    note bottom of ChatInterface: 对应LLM\n对话窗口
+}
+
+' ==========================================
+' 2. 应用服务层 (Application Layer)
+' ==========================================
+package "应用服务层 (Application)" as App_Layer {
+    
+    package "智能体服务 (AgentService)" as Pkg_Agent {
+        [意图识别]
+        [Text2Cypher转换]
+    }
+    
+    package "设备全生命周期服务 (DeviceLifecycle)" as Pkg_Lifecycle {
+        [接入认证]
+        [固件升级]
+        [退役清洗]
+    }
+    
+    package "图谱拓扑服务 (TopologyService)" as Pkg_Topology {
+        [关系构建]
+        [影响范围分析]
+    }
+    
+    package "指令控制服务 (ControlService)" as Pkg_Control {
+        [指令翻译]
+        [批量下发]
+    }
+}
+
+' ==========================================
+' 3. 基础设施层 (Infrastructure Layer)
+' ==========================================
+package "基础设施层 (Infrastructure)" as Infra_Layer {
+    package "图数据库适配器 (GraphAdapter)" as Pkg_Neo4j {
+        [Neo4j Driver]
+    }
+    
+    package "大模型网关 (LLMGateway)" as Pkg_LLM {
+        [OpenAI/LocalLLM Client]
+    }
+    
+    package "IoT连接器 (IoTConnector)" as Pkg_MQTT {
+        [MQTT Broker Client]
+        [证书管理]
+    }
+}
+
+' ==========================================
+' 4. 领域模型层 (Domain Layer)
+' ==========================================
+package "领域模型层 (Domain / Shared)" as Domain_Layer {
+    package "核心实体模型 (CoreModel)" as Pkg_Model {
+        ' 【修复点】：将 class 关键字改为组件语法 [] 或 entity
+        ' 这样避免了混合图导致的语法错误
+        [Device (设备)]
+        [Space (空间:楼宇/房间)]
+        [TopologyRelation (拓扑关系)]
+    }
+    
+    package "通用DTO与异常" as Pkg_Common {
+    }
+}
+
+' ==========================================
+' 依赖关系定义 (遵循无环原则 & 单向依赖)
+' ==========================================
+
+' - - - 1. UI 依赖 应用服务 - - -
+WebPortal ..> Pkg_Lifecycle : use
+WebPortal ..> Pkg_Topology : use
+WebPortal ..> Pkg_Control : use
+ChatInterface ..> Pkg_Agent : use
+
+' - - - 2. 应用服务 内部协作 (同层依赖) - - -
+Pkg_Agent ..> Pkg_Topology : 查询图谱
+Pkg_Agent ..> Pkg_Control : 触发指令
+Pkg_Lifecycle ..> Pkg_Topology : 维护节点状态
+
+' - - - 3. 应用服务 依赖 基础设施 (依赖倒置/使用关系) - - -
+Pkg_Agent ..> Pkg_LLM : 调用大模型
+Pkg_Topology ..> Pkg_Neo4j : 执行Cypher
+Pkg_Lifecycle ..> Pkg_MQTT : 监听设备上下线
+Pkg_Control ..> Pkg_MQTT : 下发指令
+
+' - - - 4. 基础设施 依赖 领域模型 (数据映射) - - -
+Infra_Layer ..> Domain_Layer : 将数据映射为对象
+
+' - - - 5. 应用服务 依赖 领域模型 (业务逻辑) - - -
+App_Layer ..> Domain_Layer : 核心逻辑载体
+
+' - - - 6. UI 依赖 领域模型 (展示数据) - - -
+UI_Layer ..> Domain_Layer : 展示VO/DTO
+
+@enduml
+
+@startuml
+top to bottom direction
+
+skinparam package {
+    BackgroundColor #FEFECE
+    BorderColor #A80036
+    FontName Arial
+    FontColor #000000
+}
+skinparam componentStyle uml2
+
+package "用户界面层 (Presentation)" as UI_Layer {
+    package "Web管理门户" as WebPortal
+    note bottom of WebPortal: 对应运营经理\n的全景看板
+    
+    package "智能问答组件" as ChatInterface
+    note bottom of ChatInterface: 对应LLM\n对话窗口
+}
+
+package "应用服务层 (Application)" as App_Layer {
+    
+    package "智能体服务 (AgentService)" as Pkg_Agent {
+        [意图识别]
+        [Text2Cypher转换]
+    }
+    
+    package "设备全生命周期服务 (DeviceLifecycle)" as Pkg_Lifecycle {
+        [接入认证]
+        [固件升级]
+        [退役清洗]
+    }
+    
+    package "图谱拓扑服务 (TopologyService)" as Pkg_Topology {
+        [关系构建]
+        [影响范围分析]
+    }
+    
+    package "指令控制服务 (ControlService)" as Pkg_Control {
+        [指令翻译]
+        [批量下发]
+    }
+}
+
+package "基础设施层 (Infrastructure)" as Infra_Layer {
+    package "图数据库适配器 (GraphAdapter)" as Pkg_Neo4j {
+        [Neo4j Driver]
+    }
+    
+    package "大模型网关 (LLMGateway)" as Pkg_LLM {
+        [OpenAI/LocalLLM Client]
+    }
+    
+    package "IoT连接器 (IoTConnector)" as Pkg_MQTT {
+        [MQTT Broker Client]
+        [证书管理]
+    }
+}
+
+package "领域模型层 (Domain / Shared)" as Domain_Layer {
+    package "核心实体模型 (CoreModel)" as Pkg_Model {
+        [Device (设备)]
+        [Space (空间:楼宇/房间)]
+        [TopologyRelation (拓扑关系)]
+    }
+    
+    package "通用DTO与异常" as Pkg_Common {
+    }
+}
+
+
+WebPortal ..> Pkg_Lifecycle : use
+WebPortal ..> Pkg_Topology : use
+WebPortal ..> Pkg_Control : use
+ChatInterface ..> Pkg_Agent : use
+
+Pkg_Agent ..> Pkg_Topology : 查询图谱
+Pkg_Agent ..> Pkg_Control : 触发指令
+Pkg_Lifecycle ..> Pkg_Topology : 维护节点状态
+
+Pkg_Agent ..> Pkg_LLM : 调用大模型
+Pkg_Topology ..> Pkg_Neo4j : 执行Cypher
+Pkg_Lifecycle ..> Pkg_MQTT : 监听设备上下线
+Pkg_Control ..> Pkg_MQTT : 下发指令
+
+Infra_Layer ..> Domain_Layer : 将数据映射为对象
+
+App_Layer ..> Domain_Layer : 核心逻辑载体
+
+UI_Layer ..> Domain_Layer : 展示VO/DTO
+
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 18:25:05 CST 2021)
+(MIT source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: GBK
+Language: zh
+Country: CN
+--></g></svg>
